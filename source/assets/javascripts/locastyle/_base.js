@@ -2,6 +2,7 @@ var locastyle = (function() {
   'use strict';
 
   function init(dom_scope){
+
     breakpointWindowWidth();
     toggleTextOnClick(dom_scope);
     toggleTextOnHover(dom_scope);
@@ -9,7 +10,6 @@ var locastyle = (function() {
     classToggle(dom_scope);
     select2DefaultConfig(dom_scope, '');
     btnGroupActivationToogle(dom_scope);
-    subMenu();
     checkMainSidebar();
   }
 
