@@ -13,6 +13,7 @@ var locastyle = (function() {
     subMenu();
   }
 
+
   // Verifica se existe a Sidebar lateral e aplica uma clase no elemento HTML
   function checkMainSidebar() {
     var sidebarEl = document.getElementsByClassName('main-sidebar').length;
