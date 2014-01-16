@@ -141,6 +141,29 @@ layout: false
 						</div>
 					</div>
 
+					<!-- Button trigger modal -->
+					<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Abrir modal</a>
+					<br>
+					<br>
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+									<h4 class="modal-title">Título do Modal</h4>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+									<button type="button" class="btn btn-primary">Salvar</button>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal -->
+
 
 					<div class="ls-collapse">
 
@@ -379,6 +402,26 @@ layout: false
 
 						<div class="sidebox-inner">
 
+					<section class="sidebox">
+						<h1 class="sidebox-title ico-user">Dados da conta</h1>
+						<div class="sidebox-inner">
+							<span class="status-text">Plano
+								<b>Email Marketing III</b>
+							</span>
+							<hr>
+							<span class="status-text">Saldo Mensal
+								<b>10.000 envios</b>
+								<small>*Válido até 31/01/2012</small>
+							</span>
+						</div>
+						<a href="#" class="ico-arrow-right">Alterar Plano</a>
+					</section>
+
+					<section class="sidebox">
+						<h1 class="sidebox-title ico-bars">Consumo</h1>
+
+						<div class="sidebox-inner">
+
 							<span class="status-text">
 								Envios do plano
 								<strong>0</strong> de 20000
@@ -406,6 +449,7 @@ layout: false
 									<span>45%</span>
 								</div>
 							</div>
+
 						</div>
 						<div class="well well-sm well-status-sidebar txt-center no-margin-bottom">
 							<p>Total de envios utilizados</p>
@@ -451,6 +495,7 @@ layout: false
 	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 	<%= javascript_include_tag "locastyle" %>
 	<script src="<%= base_url + bootstrap_js %>"></script>
+
 	<script type="text/javascript" src="//assets.locaweb.com.br/lwbar/<%= stable_lwbar %>/lwbar.js" data-logout-url="#" data-user-name="Nome de usuário"></script>
 
 </body>
