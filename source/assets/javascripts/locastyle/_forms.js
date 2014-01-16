@@ -101,6 +101,19 @@ locastyle.forms = (function() {
       var $self = $(this).data('target');
       if ($($self).attr('type') == 'password'){
         $($self).removeAttr('attr').prop('type','text');
+      } else
+        $($self).removeAttr('attr').prop('type','password');
+    });
+  }
+
+  //Minimiza o resultado para a busca
+  function select2DefaultConfig(exclude){
+    $('.select2').not(exclude).each(function(i, el){
+      var $select = $(el);
+      var $optionList = $select.find('option');
+      var visible;
+      if( $select.data('search') == false  ){
+        visible = -1;
       } else {
         $($self).removeAttr('attr').prop('type','password');
       }
