@@ -30,7 +30,6 @@ tags: changelog
 
 \- [7db75fe0b2](https://github.com/locaweb/locawebstyle/commit/7db75fe0b204207d221333019b6148c383347525) Correção da função que insere classes do Breakpoints na tag HTML.
 
----
 
 **Documentação**
 
