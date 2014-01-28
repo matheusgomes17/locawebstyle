@@ -83,5 +83,3 @@ describe("Mobile Functions: ", function() {
     });
 
   });
-
-});
