@@ -16,7 +16,6 @@ locastyle.mobile = (function() {
     mobileGroupActions(dom_scope);
   }
 
-
   //
   // Checa se a sidebar e o nav-content existem.
   //
