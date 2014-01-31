@@ -81,5 +81,6 @@ describe("Mobile Functions: ", function() {
         expect($('html').hasClass("right-bar")).toBeFalsy();
       });
     });
-
   });
+
+});

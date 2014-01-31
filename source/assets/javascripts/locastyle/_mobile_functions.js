@@ -11,14 +11,15 @@ locastyle.mobile = (function() {
     tabDropdownActions(dom_scope);
     sliderMobile(dom_scope);
     checkSidebarExist(dom_scope);
-    showMainSidebar();
     lwbarMobile();
     mobileGroupActions(dom_scope);
-  }
 
   //
   // Checa se a sidebar e o nav-content existem.
   //
+    showMainSidebar();
+  }
+
   function checkSidebarExist(dom_scope) {
     if ( $(".sidebar", dom_scope).length ) {
       $('.control-sidebar', dom_scope).removeClass('hidden');
