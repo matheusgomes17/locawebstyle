@@ -20,7 +20,6 @@ var locastyle = (function() {
     if (sidebarEl) {
       document.getElementsByTagName('html')[0].className+= " with-main-sidebar";
     };
-
   }
 
   // Verifica qual breakpoint a janela está e insere uma classe no elemento HTML
