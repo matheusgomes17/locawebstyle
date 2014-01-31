@@ -4,6 +4,7 @@ locastyle.mobile = (function() {
   'use strict';
 
   function init(dom_scope){
+
     mobileLeftBar(dom_scope);
     mobileRightBar(dom_scope);
     mobileBarOverlay(dom_scope);
