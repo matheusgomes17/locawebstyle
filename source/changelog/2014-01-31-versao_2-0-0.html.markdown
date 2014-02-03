@@ -98,3 +98,4 @@ Maneiras para usar o Locastyle:
 *   [Endereço CDN](http://locaweb.github.io/locawebstyle/manual/introducao/como-usar){:target="_blank"}
 *   [Github (clone)](https://github.com/locaweb/locawebstyle){:target="_blank"}
 *   [Download dos assets (EDGE)](http://developer.locaweb.com.br/assets/edge.zip){:target="_blank"}
+
