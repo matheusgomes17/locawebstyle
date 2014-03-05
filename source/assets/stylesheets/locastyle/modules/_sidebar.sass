@@ -24,7 +24,7 @@ $mobile-sidebar-width: "240px"
 
 	.sidebox-inner
 		@extend .bg-gray4
-		margin-bottom: 10px
+		margin-top: 10px
 		padding: 10px
 		+border-radius-default()
 
@@ -37,6 +37,8 @@ $mobile-sidebar-width: "240px"
 
 	.ico-arrow-right
 		font-size: .875rem
+		margin-top: 3px
+		display: inline-block
 
 	// Textos de status de informações da sidebar
 	small.status-text
@@ -63,6 +65,7 @@ $mobile-sidebar-width: "240px"
 		box-shadow: none
 		text-align: center
 		margin-bottom: 0
+		margin-top: 10px
 
 		b
 			font-size: 1.5rem
@@ -148,7 +151,7 @@ $mobile-sidebar-width: "240px"
 	.sidebar
 		height: auto
 		position: relative
-		margin-top: 40px
+		z-index: 0
 
 		&.shortcut-position
 			position: relative
