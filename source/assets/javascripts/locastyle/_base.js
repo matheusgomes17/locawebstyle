@@ -2,7 +2,6 @@ var locastyle = (function() {
   'use strict';
 
   function init(dom_scope){
-    bgShortcutWorkaround();
     breakpointWindowWidth();
     btnGroupActivationToogle();
     checkMainSidebar();
@@ -13,19 +12,6 @@ var locastyle = (function() {
     select2DefaultConfig(dom_scope, '');
     btnGroupActivationToogle(dom_scope);
     subMenu();
-  }
-
-  // Aquele background cinza que fica sempre atrás do elemento Shortcut
-  // Não nos orgulhamos disso. Mas não havia maneira melhor de fazer. ;-)
-  function bgShortcutWorkaround() {
-    if ($(".shortcut-box").length > 0) {
-      $('.main').prepend('<span class="bg-shortcut-workaround"></span>');
-      $('.bg-shortcut-workaround').css('height', $('.shortcut-box').outerHeight());
-    }
-
-    $( window ).resize(function() {
-      $('.bg-shortcut-workaround').css('height', $('.shortcut-box').outerHeight());
-    });
   }
 
   // Verifica se existe a Sidebar lateral e aplica uma clase no elemento HTML
