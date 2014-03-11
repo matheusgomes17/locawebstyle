@@ -13,6 +13,10 @@
 	a.btn-default
 		color: $gray3
 
+		&:hover,
+		&:focus
+			color: #333
+
 	a
 		color: $color2
 
@@ -248,7 +252,8 @@
 	.pager
 		font-size: .87rem
 
-		> .active a
+		> .active a,
+		> .active span
 			background-color: $color2
 			border-color: $color2
 
@@ -288,6 +293,32 @@
 
 	.select2-container.select2-container-multi .select2-choices .select2-search-choice
 		background: $color4
+
+
+	.lwbar-id
+		background-color: $gray3
+		color: $gray4
+
+		&:before
+			color: $gray2
+			border-color: $gray2
+
+	.btn-logout
+		border-color: $gray2
+		color: $gray2
+		text-decoration: none
+
+	//
+	// Pagina de confirmação de E-mail
+	//
+	.confirmation-page
+		h1
+
+			a
+				color: $color1 !important
+
+		p
+			color: $gray5
 
 //
 // Cores do tablet para Desktop
@@ -346,5 +377,5 @@
 		.shortcut-title.active:before,
 		.shortcut-title:hover:before,
 		.shortcut-title:focus:before
-			background-color: $color1
+			background-color: $color2
 			color: #fff

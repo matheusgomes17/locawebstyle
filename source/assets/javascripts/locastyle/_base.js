@@ -2,9 +2,8 @@ var locastyle = (function() {
   'use strict';
 
   function init(dom_scope){
-    breakpointWindowWidth();
-    btnGroupActivationToogle();
     checkMainSidebar();
+    breakpointWindowWidth();
     toggleTextOnClick(dom_scope);
     toggleTextOnHover(dom_scope);
     linkPreventDefault(dom_scope);

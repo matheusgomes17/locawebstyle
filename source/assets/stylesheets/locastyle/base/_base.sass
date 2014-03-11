@@ -28,6 +28,9 @@ $height-short: 350px
 	position: relative
 	background: gray
 
+	.alert:first-child
+		margin-top: 30px
+
 a
 	color: $gray2
 
@@ -177,6 +180,7 @@ a.label
 
 @media #{$media-tablet}
 	.no-menu
+
 		.header
 			padding-bottom: 40px
 
@@ -190,3 +194,5 @@ a.label
 		padding-top: 94px
 		overflow: auto
 
+	.content[role="main"] .alert:first-child
+		margin-top: 0

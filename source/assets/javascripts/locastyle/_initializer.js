@@ -3,10 +3,9 @@ $(window).load(function() {
   locastyle.init($(document));
   locastyle.mobile.init($(document));
   locastyle.bootstrap.init($(document));
-  locastyle.forms.init();
-  locastyle.tables.init();
-  locastyle.passwordStregth.init();
-  locastyle.carousel.init();
-  locastyle.accessibility.init();
+  locastyle.forms.init($(document));
+  locastyle.tables.init($(document));
+  locastyle.passwordStregth.init($(document));
+  locastyle.accessibility.init($(document));
   locastyle.collapse.init($(document));
 });
