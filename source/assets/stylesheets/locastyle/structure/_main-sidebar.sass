@@ -54,37 +54,81 @@ $main-sidebar-width: 240px
 	-ms-transform: translate3D(-240px, 0, 0)
 	transition: -webkit-transform .2s ease-in
 
-	ul
-		border-top: 1px solid $gray1
+.main-menu
+	border-top: 1px solid $gray1
 
-		&.submenu
-			padding: 0 !important
-			background: #000
+	&.submenu
+		padding: 0 !important
+		background: #000
 
-			li a
-				padding-left: 20px
+		li a
+			padding-left: 20px
 
-			li:last-child
-				border: none
+		li:last-child
+			border: none
 
-		li
-			list-style: none
-			border-bottom: 1px solid rgba( #fff, .1)
+	li
+		list-style: none
+		border-bottom: 1px solid rgba( #fff, .1)
 
-			a
-				display: block
-				padding: 10px 10px 10px 15px
-				font-size: 16px
-				border-left: 5px solid transparent
+		a
+			display: block
+			padding: 10px 10px 10px 15px
+			font-size: 16px
+			border-left: 5px solid transparent
+			color: #fff
+
+			&.active,
+			&:hover,
+			&:focus
+				background: $gray1
+				text-decoration: none
+				border-left-color: $gray2
 				color: #fff
 
-				&.active,
-				&:hover,
-				&:focus
-					background: $gray1
-					text-decoration: none
-					border-left-color: $gray2
-					color: #fff
+.user-account
+	position: fixed
+	top: 0
+	right: 0
+	z-index: 10
+	width: 210px
+
+	> a
+		display: inline-block
+		width: 100%
+		height: 55px
+		vertical-align: middle
+		padding: 10px
+		color: #fff
+		background: #8ecf00
+		position: relative
+		font-size: 0.875rem
+
+		strong
+			margin: 0 5px 0 0
+
+		&:hover
+			text-transform: underline
+			color: #fff
+
+		&::before
+			+border-circle(38px, 18px)
+			color: #fff
+
+		&::after
+			content: ""
+			display: block
+			position: absolute
+			top: 50%
+			right: 10px
+			margin-top: -2px
+			border: 5px solid transparent
+			border-top-color: #fff
+
+
+	ul
+		display: none
+
 
 //
 // De tablet para Desktop
@@ -92,10 +136,10 @@ $main-sidebar-width: 240px
 @media #{$media-tablet}
 	.main-sidebar
 		float: left
-		-webkit-transform: translate3D(0, 0, 0)
+		-webkit-transform: none
 		position: static
 		overflow: auto
-		padding-top: 60px
+		margin-top: 60px
 
 	.call-sidebar
 		display: none
