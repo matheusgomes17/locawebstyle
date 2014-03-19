@@ -10,6 +10,7 @@ var locastyle = (function() {
     select2DefaultConfig(dom_scope, '');
     btnGroupActivationToogle(dom_scope);
     checkMainSidebar();
+    subMenu();
   }
 
   // Verifica se existe a Sidebar lateral e aplica uma clase no elemento HTML
