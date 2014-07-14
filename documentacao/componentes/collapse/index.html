@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="ls-theme-green documentacao documentacao_componentes documentacao_componentes_collapse documentacao_componentes_collapse_index">
+<head>
+  <meta charset="UTF-8">
+  <title>Collapse & Accordeon</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Um painel com título visível e conteúdo oculto" />
+  <meta name="keywords" content="" />
+
+  <link href="../../../assets/stylesheets/docs.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="/locawebstyle//assets/stylesheets/locastyle.css">
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-41233562-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+<body>
+
+
+<header class="doc-header container">
+  <nav class="doc-menu">
+  <span class="sandwich"></span>
+  <ul>
+    <li><a href="/locawebstyle/">Home</a></li>
+    <li><a href="/locawebstyle//documentacao/introducao/">Use agora</a></li>
+    <li><a href="/locawebstyle//documentacao/praticas/">Documentação</a></li>
+    <li><a href="/locawebstyle//changelog">Changelog</a></li>
+    <li><a href="http://locaweb.github.io/locawebstyle-v1/">Documentação V1</a></li>
+    <li><a href="http://locaweb.github.io/locawebstyle-v2/">Documentação V2</a></li>
+  </ul>
+</nav>
+
+  <h1 class="doc-logo"><a href="/locawebstyle//"><strong>Locaweb</strong> Style</a></h1>
+</header>
+
+<div class="doc-title-intro">
+  <div class="container">
+    <h1>Documentação</h1>
+    <p>Saiba todas as features que te ajudarão a produzir sistemas mais rapidamente.</p>
+  </div>
+</div>
+
+<nav class="doc-menu-top">
+  <div class="container">
+    <ul>
+      <li class=''><a class='' href='/locawebstyle//documentacao/introducao/'>Introdução</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/css/grid/'>CSS</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/funcoes-js/'>Funções JS</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/componentes/'>Componentes</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/formularios/'>Formulários</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/exemplos/'>Telas de Exemplo</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/cartilha-de-elementos/'>Cartilha de Elementos</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="doc-content container">
+  <div class="row">
+    <aside class="col-md-3">
+  <nav class="doc-sidebar-menu">
+    <ul>
+      <li class=''><a class='' href='/locawebstyle//documentacao/componentes/'>Abas</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/componentes/alertas/'>Alertas</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/componentes/barra-de-progresso/'>Barra de Progresso</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/componentes/botao-switch/'>Botão Switch</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/componentes/botoes/'>Botões</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/componentes/box/'>Box genérico</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/componentes/breadcrumb/'>Breadcrumb</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/componentes/collapse/'>Collapse &amp; Accordeon</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/componentes/dropdown/'>Dropdown</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/componentes/paginacao/'>Filtro de exibição e paginação</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/componentes/listas/'>Listas</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/componentes/modal/'>Modal</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/componentes/popover/'>Popover</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/componentes/tabelas/'>Tabelas</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/componentes/tags/'>Tags</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/componentes/tooltip/'>Tooltip</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/componentes/tour-guiado/'>Tour Guiado</a></li>
+      <li class=''><a class='' href='/locawebstyle//documentacao/componentes/rastreando-eventos/'>Rastreando eventos</a></li>
+    </ul>
+  </nav>
+</aside>
+
+
+<section class="col-md-9">
+
+
+
+  <div class="doc-intro-content">
+  <h1>Collapse & Accordeon</h1>
+  <p>Um painel com título visível e conteúdo oculto</p>
+</div>
+
+
+
+  <div class="ls-box-demo">
+    <div data-ls-module="collapse" class="ls-collapse">
+  <a href="#" class="ls-collapse-header">
+    <h3 class="ls-collapse-title">Título 1</h3>
+  </a>
+  <div class="ls-collapse-body">
+    <p>
+      Exercitationem molestiae quod molestiae sit fugit accusamus saepe aut occaecati modi ut aperiam numquam. non atque veniam quia praesentium ratione autem perferendis incidunt molestiae sed. voluptatem ea et omnis repellat vel. alias facilis quae temporibus fuga culpa. ipsa animi pariatur neque cum est quis cupiditate impedit ratione dolor dolores qui. voluptate dignissimos reiciendis enim consequatur amet labore alias. sapiente debitis velit qui porro architecto in aliquam consequuntur
+    </p>
+  </div>
+</div>
+<div data-ls-module="collapse" class="ls-collapse">
+  <a href="#" class="ls-collapse-header">
+    <h3 class="ls-collapse-title">Título 2</h3>
+  </a>
+  <div class="ls-collapse-body">
+    <p>
+      Exercitationem molestiae quod molestiae sit fugit accusamus saepe aut occaecati modi ut aperiam numquam. non atque veniam quia praesentium ratione autem perferendis incidunt molestiae sed. voluptatem ea et omnis repellat vel. alias facilis quae temporibus fuga culpa. ipsa animi pariatur neque cum est quis cupiditate impedit ratione dolor dolores qui. voluptate dignissimos reiciendis enim consequatur amet labore alias. sapiente debitis velit qui porro architecto in aliquam consequuntur
+    </p>
+  </div>
+</div>
+
+  </div>
+
+  <div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">data-ls-module=</span><span class="s">"collapse"</span> <span class="na">class=</span><span class="s">"ls-collapse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"ls-collapse-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"ls-collapse-title"</span><span class="nt">&gt;</span>Título 1<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-collapse-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      rerum
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+
+
+  <p>Os títulos, vísiveis quando o <i>collapse</i> está fechado, podem conter qualquer conteúdo, por exemplo:</p>
+
+  <div class="ls-box-demo">
+    <div data-ls-module="collapse" class="ls-collapse">
+  <a href="#" class="ls-collapse-header">
+    <h3 class="ls-collapse-title">
+      Titulo
+    </h3>
+    <p>
+      Descrição para este collapse
+    </p>
+  </a>
+  <div class="ls-collapse-body">
+    <p>
+      Architecto rerum eveniet molestiae assumenda excepturi et ut eligendi et et. aut ab et placeat eum. voluptatem enim eum sint. corrupti et consequatur velit dolorem iusto eveniet. placeat quae impedit est voluptatem omnis vel libero odit. ut qui quia omnis officia qui deserunt
+    </p>
+  </div>
+</div>
+
+  </div>
+  <div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">data-ls-module=</span><span class="s">"collapse"</span> <span class="na">class=</span><span class="s">"ls-collapse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"ls-collapse-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"ls-collapse-title"</span><span class="nt">&gt;</span>
+      Titulo
+    <span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      Descrição para este collapse
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-collapse-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      ex cumque aut
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+
+
+  <div class="ls-box ls-background-info">
+    <h5 class="ls-title-4">Atenção</h5>
+    <p>Nos exemplos usamos o elemento <code>a</code> com a classe <code>.ls-collapse-header</code>, mas qualquer elemento, como um DIV por exemplo, pode receber essa classe.</p>
+  </div>
+
+  <h2 class="doc-title-3">Parâmetros adicionais</h2>
+
+  <table class="ls-table">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Tipo</th>
+        <th>Descrição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ls-collapse-open-always</td>
+        <td>classe</td>
+        <td>mantém um <i>collapse</i> sempre aberto</td>
+      </tr>
+      <tr>
+        <td>ls-collapse-open</td>
+        <td>classe</td>
+        <td>inicia um <i>collapse</i> aberto</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="doc-title-3">Exemplos:</h2>
+
+  <div class="ls-box-demo">
+      <div data-ls-module="collapse" class="ls-collapse ls-collapse-open">
+  <a href="#" class="ls-collapse-header">
+    <h3 class="ls-collapse-title">Collapse inicia aberto com a classe .ls-collapse-open 1</h3>
+  </a>
+  <div class="ls-collapse-body">
+    <p>
+      Numquam porro sed qui explicabo. accusantium magni autem quos ut perspiciatis nihil voluptatem sunt consequatur accusamus aliquid. temporibus eum praesentium nobis nobis voluptate quas nesciunt veniam. est inventore unde sed asperiores
+
+Harum atque reiciendis nemo nulla officia vel voluptas est deleniti totam. accusamus veritatis sint dolorem. nulla quia praesentium nobis similique praesentium consequatur. qui doloremque officia autem nobis vel id voluptatem modi in fugiat ut. quis est quidem qui autem cupiditate animi quibusdam non ullam commodi. earum asperiores aliquid illum nesciunt voluptas eligendi. ipsum rerum impedit nulla in quisquam sint ullam velit
+    </p>
+  </div>
+</div>
+
+  </div>
+  <div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">data-ls-module=</span><span class="s">"collapse"</span> <span class="na">class=</span><span class="s">"ls-collapse ls-collapse-open"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"ls-collapse-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"ls-collapse-title"</span><span class="nt">&gt;</span>Collapse inicia aberto com a classe .ls-collapse-open 1<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-collapse-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      quae minima
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+
+
+  <div class="ls-box-demo">
+    <div data-ls-module="collapse" class="ls-collapse ls-collapse-open ls-collapse-open-always">
+  <a href="#" class="ls-collapse-header">
+    <h3 class="ls-collapse-title">Collapse inicia aberto e não fecha com a classe .ls-collapse-open-always 1</h3>
+  </a>
+  <div class="ls-collapse-body">
+    <p>
+      Iure ut non corrupti ipsam error. quam consequatur velit possimus sunt qui quae vero praesentium molestiae alias atque consequatur aut ea. asperiores explicabo vero doloremque id et commodi aliquam eaque est a aut qui ad. quod consequuntur sed non omnis maxime maiores animi et perferendis non at eveniet nulla quibusdam. doloremque unde et ut nisi qui sint nisi ut nobis non aut voluptatem. dolor iure odio ea. aut dolorem quidem ut soluta beatae nihil illum
+
+Soluta porro commodi suscipit nulla neque ab iusto unde et aut ad. fugiat facilis voluptatem quas sed maiores soluta. nam dolor vel beatae impedit animi earum temporibus enim delectus in nesciunt
+    </p>
+  </div>
+</div>
+
+  </div>
+  <div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">data-ls-module=</span><span class="s">"collapse"</span> <span class="na">class=</span><span class="s">"ls-collapse ls-collapse-open ls-collapse-open-always"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"ls-collapse-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"ls-collapse-title"</span><span class="nt">&gt;</span>Collapse inicia aberto e não fecha com a classe .ls-collapse-open-always 1<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-collapse-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      reiciendis praesentium
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+
+
+  <h2 class="doc-title-3">Accordeon</h2>
+  <p><i>Accordeon</i> é um conjunto de <i>collapses</i> agrupados, onde apenas um deles permanece aberto.</p>
+  <p>Um <i>accordeon</i> é um conjunto de <i>collapses</i>, como mostrados acima, com um elemento que os agrupa, com a classe <code>.ls-collapse-group</code>.</p>
+
+  <div class="ls-box-demo">
+    <div class="ls-collapse-group">
+      <div data-ls-module="collapse" class="ls-collapse">
+  <a href="#" class="ls-collapse-header">
+    <h3 class="ls-collapse-title">Título 1</h3>
+  </a>
+  <div class="ls-collapse-body">
+    <p>
+      Alias placeat aut delectus ut unde ut possimus eum exercitationem qui aut modi. impedit qui eos et non. quaerat ea voluptas non
+    </p>
+  </div>
+</div>
+<div data-ls-module="collapse" class="ls-collapse">
+  <a href="#" class="ls-collapse-header">
+    <h3 class="ls-collapse-title">Título 2</h3>
+  </a>
+  <div class="ls-collapse-body">
+    <p>
+      Alias placeat aut delectus ut unde ut possimus eum exercitationem qui aut modi. impedit qui eos et non. quaerat ea voluptas non
+    </p>
+  </div>
+</div>
+<div data-ls-module="collapse" class="ls-collapse">
+  <a href="#" class="ls-collapse-header">
+    <h3 class="ls-collapse-title">Título 3</h3>
+  </a>
+  <div class="ls-collapse-body">
+    <p>
+      Alias placeat aut delectus ut unde ut possimus eum exercitationem qui aut modi. impedit qui eos et non. quaerat ea voluptas non
+    </p>
+  </div>
+</div>
+<div data-ls-module="collapse" class="ls-collapse">
+  <a href="#" class="ls-collapse-header">
+    <h3 class="ls-collapse-title">Título 4</h3>
+  </a>
+  <div class="ls-collapse-body">
+    <p>
+      Alias placeat aut delectus ut unde ut possimus eum exercitationem qui aut modi. impedit qui eos et non. quaerat ea voluptas non
+    </p>
+  </div>
+</div>
+<div data-ls-module="collapse" class="ls-collapse">
+  <a href="#" class="ls-collapse-header">
+    <h3 class="ls-collapse-title">Título 5</h3>
+  </a>
+  <div class="ls-collapse-body">
+    <p>
+      Alias placeat aut delectus ut unde ut possimus eum exercitationem qui aut modi. impedit qui eos et non. quaerat ea voluptas non
+    </p>
+  </div>
+</div>
+
+    </div>
+  </div>
+  <div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">data-ls-module=</span><span class="s">"collapse"</span> <span class="na">class=</span><span class="s">"ls-collapse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"ls-collapse-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"ls-collapse-title"</span><span class="nt">&gt;</span>Título 1<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-collapse-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      Blanditiis molestias repellat voluptatem rerum ipsa neque sapiente quia non vero debitis sit. cum omnis inventore quam at in et aliquid officiis nemo voluptas aut quo explicabo sapiente. consequuntur et aut porro ut rerum. est fugit voluptatem voluptates sunt aliquid culpa a ut eum praesentium qui fugiat aut corporis. quasi tempora rerum sint pariatur qui provident
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">data-ls-module=</span><span class="s">"collapse"</span> <span class="na">class=</span><span class="s">"ls-collapse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"ls-collapse-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"ls-collapse-title"</span><span class="nt">&gt;</span>Título 2<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-collapse-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      Blanditiis molestias repellat voluptatem rerum ipsa neque sapiente quia non vero debitis sit. cum omnis inventore quam at in et aliquid officiis nemo voluptas aut quo explicabo sapiente. consequuntur et aut porro ut rerum. est fugit voluptatem voluptates sunt aliquid culpa a ut eum praesentium qui fugiat aut corporis. quasi tempora rerum sint pariatur qui provident
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">data-ls-module=</span><span class="s">"collapse"</span> <span class="na">class=</span><span class="s">"ls-collapse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"ls-collapse-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"ls-collapse-title"</span><span class="nt">&gt;</span>Título 3<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-collapse-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      Blanditiis molestias repellat voluptatem rerum ipsa neque sapiente quia non vero debitis sit. cum omnis inventore quam at in et aliquid officiis nemo voluptas aut quo explicabo sapiente. consequuntur et aut porro ut rerum. est fugit voluptatem voluptates sunt aliquid culpa a ut eum praesentium qui fugiat aut corporis. quasi tempora rerum sint pariatur qui provident
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">data-ls-module=</span><span class="s">"collapse"</span> <span class="na">class=</span><span class="s">"ls-collapse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"ls-collapse-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"ls-collapse-title"</span><span class="nt">&gt;</span>Título 4<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-collapse-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      Blanditiis molestias repellat voluptatem rerum ipsa neque sapiente quia non vero debitis sit. cum omnis inventore quam at in et aliquid officiis nemo voluptas aut quo explicabo sapiente. consequuntur et aut porro ut rerum. est fugit voluptatem voluptates sunt aliquid culpa a ut eum praesentium qui fugiat aut corporis. quasi tempora rerum sint pariatur qui provident
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">data-ls-module=</span><span class="s">"collapse"</span> <span class="na">class=</span><span class="s">"ls-collapse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"ls-collapse-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"ls-collapse-title"</span><span class="nt">&gt;</span>Título 5<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-collapse-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      Blanditiis molestias repellat voluptatem rerum ipsa neque sapiente quia non vero debitis sit. cum omnis inventore quam at in et aliquid officiis nemo voluptas aut quo explicabo sapiente. consequuntur et aut porro ut rerum. est fugit voluptatem voluptates sunt aliquid culpa a ut eum praesentium qui fugiat aut corporis. quasi tempora rerum sint pariatur qui provident
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+
+
+  <p>Os <i>collapses</i> agrupados em um <i>accordeon</i> aceitam as mesmas configurações que um <i>collapse</i> normal.</p>
+
+  <h2 class="doc-title-3">Abrir com ação externa</h2>
+  <p>Para usar um botão ou <i>link</i> para controlar um <i>collapse</i> utilize o atributo <code>data-toggle-collapse</code> com o valor do <b>id</b> do collapse.</p>
+
+  <div class="ls-box-demo">
+    <button type="button" class="ls-btn-primary" data-toggle-collapse="#collapse1">Abre/Fecha o <i>collapse</i> <b>#collapse1</b></button>
+    <br>
+    <br>
+    <div data-ls-module="collapse" id="collapse1" class="ls-collapse">
+  <a href="#" class="ls-collapse-header">
+    <h3 class="ls-collapse-title">Título 1</h3>
+  </a>
+  <div class="ls-collapse-body">
+    <p>
+      Qui aliquam magni pariatur omnis hic odio provident ipsa expedita qui. vero doloremque nobis et quam aliquid. occaecati autem cum iusto autem ut sint odio repellendus corporis et. in voluptatum blanditiis quo. sunt neque totam iusto aut soluta accusamus adipisci reiciendis quam corrupti aliquid voluptatem ad
+    </p>
+  </div>
+</div>
+
+  </div>
+
+  <p>Para abrir/fechar um <i>collapse</i> usando javascript, use:</p>
+
+  <div class="highlight javascript"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nx">locastyle</span><span class="p">.</span><span class="nx">collapse</span><span class="p">.</span><span class="nx">toggle</span><span class="p">(</span><span class="s1">'#collapse1'</span><span class="p">)</span><span class="w">
+</span></pre></td></tr></tbody></table>
+</div>
+
+
+
+  <h2 class="doc-title-3">Accordeon com <code>input[radio]</code> ou <code>input[checkbox]</code></h2>
+
+  <p>Para vincular um collapse ou accordeon a um <i>input</i>, o elemento <code>.ls-collapse-header</code> precisar ser necessariamente um <code>label</code>. A estrutura do collapse ainda continua normal.
+
+  <p>Accordeon com <i>radio</i>:</p>
+
+  <div class="ls-box-demo">
+    <div data-ls-module="collapse" class="ls-collapse">
+  <label class="ls-collapse-header">
+    <h3 class="ls-collapse-title">
+      <input type="radio" name="inputRadio" value="1">
+      Título 1
+    </h3>
+  </label>
+  <div class="ls-collapse-body">
+    <p>
+      Vero inventore qui doloremque ipsa est nihil itaque ipsum provident. sit excepturi tempora at quia maxime iure odio sit sed est odio. placeat vitae molestias ut odio illum tenetur asperiores dolores dolorem molestiae ut enim. voluptas iure dignissimos aspernatur quia rem doloremque fuga sed iure. non et excepturi qui. autem ratione laudantium sint velit id et facere atque qui. excepturi adipisci soluta ea voluptatem numquam explicabo est magni illum sed aut
+    </p>
+  </div>
+</div>
+<div data-ls-module="collapse" class="ls-collapse">
+  <label class="ls-collapse-header">
+    <h3 class="ls-collapse-title">
+      <input type="radio" name="inputRadio" value="2">
+      Título 2
+    </h3>
+  </label>
+  <div class="ls-collapse-body">
+    <p>
+      Vero inventore qui doloremque ipsa est nihil itaque ipsum provident. sit excepturi tempora at quia maxime iure odio sit sed est odio. placeat vitae molestias ut odio illum tenetur asperiores dolores dolorem molestiae ut enim. voluptas iure dignissimos aspernatur quia rem doloremque fuga sed iure. non et excepturi qui. autem ratione laudantium sint velit id et facere atque qui. excepturi adipisci soluta ea voluptatem numquam explicabo est magni illum sed aut
+    </p>
+  </div>
+</div>
+
+  </div>
+  <div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">data-ls-module=</span><span class="s">"collapse"</span> <span class="na">class=</span><span class="s">"ls-collapse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"ls-collapse-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"ls-collapse-title"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"inputRadio"</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      Título 1
+    <span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-collapse-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      Iusto alias voluptatem ullam nisi culpa ut debitis ut est qui atque. repellendus ut in sit quas voluptatum tempore molestiae veritatis eum soluta et. non assumenda perspiciatis et beatae molestiae placeat et et est ut ea ut ut. distinctio adipisci nam laudantium et nobis et voluptatibus a distinctio. iste quis ipsa inventore
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+
+
+  <p>Accordeon com <i>checkbox</i>:</p>
+
+  <div class="ls-box-demo">
+    <div data-ls-module="collapse" class="ls-collapse">
+  <label class="ls-collapse-header">
+    <h3 class="ls-collapse-title">
+      <input type="checkbox" name="inputCheckbox" value="1">
+      Título 1
+    </h3>
+  </label>
+  <div class="ls-collapse-body">
+    <p>
+      Quis ipsa cum ullam et alias provident. doloremque sit quaerat libero delectus illum aliquam aut enim neque eum. provident expedita rerum et. provident exercitationem aperiam odit nihil ut quod. ea repudiandae odio eaque consequatur et voluptas dolore molestiae eum quaerat voluptas. nihil illo itaque explicabo in adipisci. quas qui accusantium excepturi dolor quasi et hic qui repellendus odit quae dolor magnam
+    </p>
+  </div>
+</div>
+<div data-ls-module="collapse" class="ls-collapse">
+  <label class="ls-collapse-header">
+    <h3 class="ls-collapse-title">
+      <input type="checkbox" name="inputCheckbox" value="2">
+      Título 2
+    </h3>
+  </label>
+  <div class="ls-collapse-body">
+    <p>
+      Quis ipsa cum ullam et alias provident. doloremque sit quaerat libero delectus illum aliquam aut enim neque eum. provident expedita rerum et. provident exercitationem aperiam odit nihil ut quod. ea repudiandae odio eaque consequatur et voluptas dolore molestiae eum quaerat voluptas. nihil illo itaque explicabo in adipisci. quas qui accusantium excepturi dolor quasi et hic qui repellendus odit quae dolor magnam
+    </p>
+  </div>
+</div>
+<div data-ls-module="collapse" class="ls-collapse">
+  <label class="ls-collapse-header">
+    <h3 class="ls-collapse-title">
+      <input type="checkbox" name="inputCheckbox" value="3">
+      Título 3
+    </h3>
+  </label>
+  <div class="ls-collapse-body">
+    <p>
+      Quis ipsa cum ullam et alias provident. doloremque sit quaerat libero delectus illum aliquam aut enim neque eum. provident expedita rerum et. provident exercitationem aperiam odit nihil ut quod. ea repudiandae odio eaque consequatur et voluptas dolore molestiae eum quaerat voluptas. nihil illo itaque explicabo in adipisci. quas qui accusantium excepturi dolor quasi et hic qui repellendus odit quae dolor magnam
+    </p>
+  </div>
+</div>
+
+  </div>
+  <div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">data-ls-module=</span><span class="s">"collapse"</span> <span class="na">class=</span><span class="s">"ls-collapse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"ls-collapse-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"ls-collapse-title"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"inputCheckbox"</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      Título 1
+    <span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-collapse-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      Quibusdam dolores sint soluta soluta et. ea id atque recusandae quasi repudiandae facilis occaecati occaecati reiciendis. provident repellat libero odio. maiores porro porro quod quo quae voluptatem cupiditate voluptatem. quaerat cumque veritatis excepturi dolore omnis voluptatem aut hic. adipisci eveniet neque aut
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+
+</section>
+
+  </div>
+</div>
+
+<footer class="doc-footer">
+  <div class="container">
+   <ul class="doc-social-link">
+      <!-- <li> <a href="" class="doc-social-facebook">facebook</a> </li> -->
+      <li> <a target="_blank" class="doc-social-twitter" href="http://twitter.com/locawebdevnet">twitter</a> </li>
+    </ul>
+    <a href="http://locaweb.com.br/" class="doc-logo-footer"><img src="/locawebstyle//assets/images/docs/locaweb-logo.png" alt=""></a>
+    <p class="doc-copyright">
+      Copyright © 1997-2014 Serviços de Internet S/A.
+    </p>
+  </div>
+</footer>
+
+<script src="../../../assets/javascripts/libs/jquery-2.1.0.min.js" type="text/javascript"></script><script src="../../../assets/javascripts/locastyle.js" type="text/javascript"></script><script src="../../../assets/javascripts/docs.js" type="text/javascript"></script>
+
+</body>
+</html>
+
