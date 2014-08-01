@@ -30,8 +30,8 @@
   <span class="sandwich"></span>
   <ul>
     <li><a href="/locawebstyle">Home</a></li>
-    <li><a href="/locawebstyle/documentacao/introducao/">Use agora</a></li>
-    <li><a href="/locawebstyle/documentacao/praticas/">Documentação</a></li>
+    <li><a href="/locawebstyle/documentacao/introducao/">Documentação</a></li>
+    <li><a href="/locawebstyle/documentacao/introducao/boilerplate/">Comece por aqui</a></li>
     <li><a href="/locawebstyle/changelog">Changelog</a></li>
     <li><a href="http://locaweb.github.io/locawebstyle-v1/">Documentação V1</a></li>
     <li><a href="http://locaweb.github.io/locawebstyle-v2/">Documentação V2</a></li>
@@ -79,7 +79,7 @@
       <li class=''><a class='' href='/locawebstyle/documentacao/componentes/dropdown/'>Dropdown</a></li>
       <li class=''><a class='' href='/locawebstyle/documentacao/componentes/paginacao/'>Filtro de exibição e paginação</a></li>
       <li class=''><a class='' href='/locawebstyle/documentacao/componentes/listas/'>Listas</a></li>
-      <li class=''><a class='' href='/locawebstyle/documentacao/componentes/modal/'>Modal</a></li>
+      <li class='active'><a class='active' href='/locawebstyle/documentacao/componentes/modal/'>Modal</a></li>
       <li class=''><a class='' href='/locawebstyle/documentacao/componentes/popover/'>Popover</a></li>
       <li class=''><a class='' href='/locawebstyle/documentacao/componentes/tabelas/'>Tabelas</a></li>
       <li class=''><a class='' href='/locawebstyle/documentacao/componentes/tags/'>Tags</a></li>
@@ -92,12 +92,14 @@
 
 
 <section class="col-md-9">
-
   <div class="doc-intro-content">
   <h1>Modal</h1>
   <p>Boxes simplificados e flexíveis de diálogo que necessitam do minímo de funcionalidades para funcionar.</p>
 </div>
 
+
+  <h3 class="ls-title-4">Criando modal</h3>
+  <p>Você precisa passar no <code>data-target</code> o ID da modal.</p>
   <table class="ls-table">
     <thead>
       <tr>
@@ -112,15 +114,31 @@
         <td>target</td>
         <td>#myTarget</td>
         <td>--</td>
-        <td>Abre a modal com o mesmo nome do target</td>
+        <td>
+          <p>Abre a modal com o mesmo nome do target</p>
+        </td>
       </tr>
+    </tbody>
+  </table>
+
+  <h3 class="ls-title-4">Criando modal via template</h3>
+  <p>Para criar uma modal via template, você não precisa passar o <code>data-target</code>, somente os atributos abaixo.</p>
+  <table class="ls-table ls-table-striped">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Tipo</th>
+        <th>Padrão</th>
+        <th class="ls-width-500">Descrição</th>
+      </tr>
+    </thead>
+    <tbody>
       <tr>
         <td>content</td>
         <td>um texto curto</td>
         <td>--</td>
         <td>
-          Abre a modal com o texto inserido
-          <p>Só funciona se não houver <strong>data-target</strong></p>
+          <p>Abre a modal com o texto inserido</p>
         </td>
       </tr>
       <tr>
@@ -128,8 +146,7 @@
         <td>um titulo curto</td>
         <td>--</td>
         <td>
-          Abre a modal com o titulo inserido
-          <p>Só funciona se não houver <strong>data-target</strong></p>
+          <p>Abre a modal com o titulo inserido</p>
         </td>
       </tr>
       <tr>
@@ -137,8 +154,7 @@
         <td>texto</td>
         <td>--</td>
         <td>
-          Coloca um texto no botão de salvar
-          <p>Só funciona se não houver <strong>data-target</strong></p>
+          <p>Coloca um texto no botão de salvar</p>
         </td>
       </tr>
       <tr>
@@ -146,8 +162,7 @@
         <td>texto</td>
         <td>--</td>
         <td>
-          Coloca um texto no botão de fechar
-          <p>Só funciona se não houver <strong>data-target</strong></p>
+          <p>Coloca um texto no botão de fechar</p>
         </td>
       </tr>
       <tr>
@@ -155,8 +170,7 @@
         <td>link</td>
         <td>--</td>
         <td>
-          Coloca um link no botão de salvar
-          <p>Só funciona se não houver <strong>data-target</strong></p>
+          <p>Coloca um link no botão de salvar</p>
         </td>
       </tr>
       <tr>
@@ -164,8 +178,7 @@
         <td>texto</td>
         <td>--</td>
         <td>
-          Coloca uma classe no botão de salvar
-          <p>Só funciona se não houver <strong>data-target</strong></p>
+          <p>Coloca uma classe no botão de salvar</p>
         </td>
       </tr>
       <tr>
@@ -173,8 +186,16 @@
         <td>texto</td>
         <td>--</td>
         <td>
-          Adiciona qualquer novo atributo no botão(type='button')
-          <p>Só funciona se não houver <strong>data-target</strong></p>
+          <p>Adiciona qualquer novo atributo no <code>botão(type='button')</code> ou no <code>link</code></p>
+        </td>
+      </tr>
+      <tr>
+        <td>data-action-type</td>
+        <td>link/form</td>
+        <td>--</td>
+        <td>
+          <p>Se for <code>link</code> não é adicionado form nem button de submit, caso contrário
+          terá um <code>form</code> e o submit será um button.</p>
         </td>
       </tr>
     </tbody>
@@ -198,7 +219,7 @@
           Popover
         </a>
       </p>
-      <p>Excepturi optio suscipit id suscipit sint praesentium ipsam pariatur sequi odio corporis dolores qui. Corrupti vel ipsam nisi maxime molestiae ut est laborum eius velit ipsum repellendus. Ea odio facilis quas rem facilis debitis eveniet dicta nostrum et libero modi corporis. Blanditiis ab consequatur qui officiis numquam eligendi. Voluptatum doloribus ut qui est modi natus aut dignissimos eligendi sed sed maiores. Sed ab non maxime nulla minus itaque provident qui omnis autem voluptates est sunt. Aut voluptas quis rerum dolorem natus tenetur aspernatur saepe autem aperiam quo deserunt. Sequi doloremque veniam velit occaecati quae quia et neque molestiae culpa esse minima voluptatum. Quia dignissimos voluptas omnis error iure dolor saepe autem. Veniam et quo perspiciatis. Et officiis a quas. Iste consequatur eligendi soluta sed. Reprehenderit qui eum reprehenderit laudantium ea ea earum. Fuga dolores quo quo. Aliquid et et quia nostrum</p>
+      <p>Consequuntur blanditiis quis minus aut nihil accusantium eius voluptatem nostrum. Ut quia qui quo qui ut id quo et voluptates ipsam et. Doloremque nihil molestias saepe minus culpa qui officiis. Ipsam aliquid delectus sequi illum suscipit quos aut odio qui officiis. Incidunt eaque aut ipsum. Fugiat aliquid eius aut ipsa quam illo. Molestiae aut omnis qui temporibus. Sapiente tempore quos repellat a voluptas mollitia mollitia esse. Ut blanditiis laborum magnam odit quos. Voluptatem ipsam perferendis aut et omnis doloribus. Voluptatem dicta minus omnis iste. Qui sunt cum voluptatem repudiandae minus quos at distinctio ut ut. Maxime cumque et voluptas eveniet et consequatur sed cumque eaque rem esse unde ut quae. Temporibus iure quidem dicta officiis aspernatur quia. Quod nihil quis officiis nulla hic quos</p>
     </div>
     <div class="ls-modal-footer">
       <button class="ls-btn ls-float-right" data-dismiss="modal">Close</button>
@@ -243,7 +264,7 @@
           Popover
         <span class="nt">&lt;/a&gt;</span>
       <span class="nt">&lt;/p&gt;</span>
-      <span class="nt">&lt;p&gt;</span>Ad repellat voluptatem odio laudantium laudantium est vel laboriosam. Quos nisi ullam quibusdam magnam voluptatem autem error autem necessitatibus reprehenderit. Necessitatibus voluptates veniam aut eveniet fugiat deserunt. Nihil neque a animi. Molestiae repudiandae perferendis dolor ea. Autem quam earum velit nobis aspernatur commodi eaque blanditiis facere deserunt non iste quidem. Facilis nihil qui quia quod. Voluptatibus consequatur quisquam officiis. Ducimus aut omnis libero animi. Repellendus ut consequatur ratione reiciendis voluptatem animi. Molestias eos maiores voluptates et est asperiores deleniti eum adipisci necessitatibus. Velit molestiae perferendis voluptatem non distinctio et est ullam deserunt. Dolor molestiae molestias blanditiis itaque. Provident incidunt qui cumque fugit et facilis tempora voluptas. Amet praesentium rerum magnam pariatur rerum et<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Alias aliquid optio dicta et sint aut animi quia doloremque optio facere doloribus. Veniam laborum blanditiis pariatur occaecati dolore placeat est dolore ut voluptas. Omnis est explicabo facilis tenetur assumenda ut qui dolor voluptatum consequatur quaerat autem magni sit. Praesentium eveniet nemo magnam in et reiciendis voluptates maiores. Voluptatibus exercitationem porro non delectus sit debitis tenetur eaque excepturi optio quibusdam. Ratione minima suscipit sunt possimus illo voluptatem animi. Placeat voluptatem nemo cumque autem cupiditate aut labore dolorem aut. Placeat harum culpa non qui accusantium omnis aut labore sed dignissimos. Culpa molestiae error vero quod. Velit sequi adipisci nulla a veniam maxime eum beatae non et iste qui. Aut officiis ullam neque iste in laborum quod perferendis velit eos beatae. Dicta consequuntur corporis ipsa omnis neque. Doloremque in atque id. Voluptatum cupiditate aut adipisci culpa minus molestiae rerum qui placeat autem a dolor necessitatibus nulla. Quam dolorem nobis pariatur et cupiditate et quidem quae exercitationem neque rerum quia<span class="nt">&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-modal-footer"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ls-btn ls-float-right"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
@@ -281,7 +302,7 @@
 </footer>
 
 <script src="../../../assets/javascripts/libs/jquery-2.1.0.min.js" type="text/javascript"></script><script src="../../../assets/javascripts/locastyle.js" type="text/javascript"></script><script src="../../../assets/javascripts/docs.js" type="text/javascript"></script>
-
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51cdc3552ecf7080"></script>
 </body>
 </html>
 
