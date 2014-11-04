@@ -3,20 +3,20 @@
 //
 .ls-topbar
   height: $topbar-height
-  position: fixed
-  top: 0
-  left: 0
   width: 100%
-  z-index: 11
+  // z-index: 11
+  // position: fixed
+  // top: 0
+  // left: 0
 
-  &:after
-    +box-shadow(0px 5px 8px -1px rgba(255,255,255,.5))
-    content: ""
-    width: 100%
-    height: 6px
-    position: absolute
-    bottom: 0
-    left: 0
+  // &:after
+  //   +box-shadow(0px 5px 8px -1px rgba(255,255,255,.5))
+  //   content: ""
+  //   width: 100%
+  //   height: 6px
+  //   position: absolute
+  //   bottom: 0
+  //   left: 0
 
   //
   // Nome do produto/marca
@@ -115,25 +115,25 @@
       vertical-align: middle
       cursor: pointer
 
-    &:after
-      background: #fff
-      content: ""
-      position: absolute
-      top: 0
-      left: 0
-      width: 100%
-      height: 2424px
-      display: none
-      opacity: .8
-
   .ls-show-notifications:before
     right: 0
     font-size: remtopx(1.5)
     top: 4px
 
-.ls-sidebar-visible .ls-ico-menu:after,
-.ls-notifications-visible .ls-show-notifications:after
-  display: block
+    // &:after
+    //   background: #fff
+    //   content: ""
+    //   position: absolute
+    //   top: 0
+    //   left: 0
+    //   width: 100%
+    //   height: 2424px
+    //   display: none
+    //   opacity: .8
+
+// .ls-sidebar-visible .ls-ico-menu:after,
+// .ls-notifications-visible .ls-show-notifications:after
+//   display: block
 
 
 @media screen and (min-width: $screen-sm)
@@ -141,14 +141,14 @@
     text-align: left
     +single-transition(none)
 
-    &:after
-      left: $sidebar-width
+    // &:after
+    //   left: $sidebar-width
 
-    .ls-sidebar-visible &
-      +translate(0, 0)
+    // .ls-sidebar-visible &
+    //   +translate(0, 0)
 
-    .ls-notifications-visible &
-      +translate(0, 0)
+    // .ls-notifications-visible &
+    //   +translate(0, 0)
 
     .ls-brand-name
       font-size: remtopx(1.625)
@@ -179,9 +179,6 @@
             font-size: remtopx(3.375)
             top: 4px
             left: 7px
-
-
-
 
     .ls-ico-menu:before,
     .ls-show-notifications:before
