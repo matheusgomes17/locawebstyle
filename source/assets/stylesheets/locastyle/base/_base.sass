@@ -2,13 +2,11 @@
   margin-left: 0
 
 .ls-main
-  min-height: 100%
-  padding-top: $topbar-height
-  margin-left: 0
-  z-index: 10
-  position: relative
   background-color: #fff
-
+  // min-height: 100%
+  // padding-top: $topbar-height
+  // z-index: 10
+  // position: relative
 
   .container-fluid
     min-height: 85%
@@ -71,13 +69,13 @@ a.ls-word-dotted
   .ls-main
     +single-transition(none)
     +transform(none)
-    margin-left: $sidebar-width
-    height: 100%
-    min-height: 100%
-    -webkit-overflow-scrolling: touch
-    -moz-overflow-scrolling: touch
-    -ms-overflow-scrolling: touch
-    overflow-scrolling: touch
+    // margin-left: $sidebar-width
+    // height: 100%
+    // min-height: 100%
+    // -webkit-overflow-scrolling: touch
+    // -moz-overflow-scrolling: touch
+    // -ms-overflow-scrolling: touch
+    // overflow-scrolling: touch
 
     .container-fluid > .row [class*="col-"]
       padding-bottom: 0
@@ -94,10 +92,6 @@ a.ls-word-dotted
   .ls-main > .container-fluid,
   .ls-main > .container
     padding: 0 30px
-
-@media screen and (min-width: $screen-sm) and (max-width: $screen-lg)
-  .ls-main
-    margin-left: 60px
 
 html:after
   content: url("//assets.locaweb.com.br/locastyle/edge/images/ls-smile.gif")
