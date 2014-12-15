@@ -32,7 +32,7 @@
     <li><a href="/locawebstyle">Home</a></li>
     <li><a href="/locawebstyle/documentacao/introducao/">Documentação</a></li>
     <li><a href="/locawebstyle/documentacao/introducao/boilerplate/">Comece por aqui</a></li>
-    <li><a href="/locawebstyle/changelog">Changelog</a></li>
+    <li><a href="https://github.com/locaweb/locawebstyle/releases">Changelog</a></li>
     <li><a href="http://locaweb.github.io/locawebstyle-v1/">Documentação V1</a></li>
     <li><a href="http://locaweb.github.io/locawebstyle-v2/">Documentação V2</a></li>
   </ul>
@@ -65,15 +65,19 @@
 
 <div class="doc-content container">
   <div class="row">
-    <aside class="col-md-3">
+    <aside class="doc-sidebar col-md-3">
+<div class="doc-sidebar-inner">
   <nav class="doc-sidebar-menu">
     <ul>
       <li class=''><a class='' href='/locawebstyle/documentacao/css/grid/'>Estrutura de Grid</a></li>
+      <li class=''><a class='' href='/locawebstyle/documentacao/css/classes-de-breakpoints/'>Classes de breakpoints</a></li>
       <li class='active'><a class='active' href='/locawebstyle/documentacao/css/classes-funcionais/'>Classes funcionais</a></li>
       <li class=''><a class='' href='/locawebstyle/documentacao/css/cores-do-tema/'>Cores do tema</a></li>
       <li class=''><a class='' href='/locawebstyle/documentacao/css/icones/'>Ícones</a></li>
+      <li class=''><a class='' href='/locawebstyle/documentacao/css/icones-panel/'>Ícones de painel</a></li>
     </ul>
   </nav>
+</div>
 </aside>
 
 
@@ -210,6 +214,12 @@
       <tr><td>.ls-text-uppercase</td><td>Transforma todas letras para maiúsculas.</td></tr>
       <tr><td>.ls-text-lowercase</td><td>Transforma todas letras para minúsculas.</td></tr>
       <tr><td>.ls-text-capitalize</td><td>Transforma a primeira letra para maiúscula.</td></tr>
+      <tr><td>.ls-text-xs</td><td>Determina que a fonte do elemento será 10px.</td></tr>
+      <tr><td>.ls-text-sm</td><td>Determina que a fonte do elemento será 12px.</td></tr>
+      <tr><td>.ls-text-md</td><td>Determina que a fonte do elemento será 14px.</td></tr>
+      <tr><td>.ls-text-lg</td><td>Determina que a fonte do elemento será 18px.</td></tr>
+      <tr><td>.ls-text-xl</td><td>Determina que a fonte do elemento será 20px.</td></tr>
+      <tr><td>.ls-style-list</td><td>Aplica o padrão de tipografia em <code>ul</code> e <code>ol</code>.</td></tr>
     </tbody>
   </table>
 
@@ -233,6 +243,7 @@
       <tr><td>.ls-no-border-left</td><td>Remove borda do lado esquerdo</td></tr>
       <tr><td>.ls-no-border-bottom</td><td>Remove borda em baixo</td></tr>
       <tr><td>.ls-no-border-top</td><td>Remove borda do topo</td></tr>
+      <tr><td>.ls-word-dotted</td><td>Adiciona borda pontilhada abaixo do texto</td></tr>
       <tr><td>.ls-transparent-25</td><td>Aplica opacidade de 25%</td></tr>
       <tr><td>.ls-transparent-50</td><td>Aplica opacidade de 50%</td></tr>
       <tr><td>.ls-transparent-75</td><td>Aplica opacidade de 75%</td></tr>
@@ -308,7 +319,10 @@
     <tbody>
       <tr><td>.ls-bg-white</td><td>Insere background branco</td></tr>
       <tr><td>.ls-color-black</td><td>Insere cor preta ao texto</td></tr>
-      <tr><td>.ls-color-danger</td><td>Insere cor vermelha ao texto</td></tr>
+      <tr><td>.ls-color-danger</td><td>Insere cor de status danger</td></tr>
+      <tr><td>.ls-color-info</td><td>Insere cor de status info</td></tr>
+      <tr><td>.ls-color-success</td><td>Insere cor de status success</td></tr>
+      <tr><td>.ls-color-warning</td><td>Insere cor de status warning</td></tr>
       <tr><td>.ls-color-theme</td><td>Insere a cor do tema</td></tr>
     </tbody>
   </table>
@@ -358,8 +372,54 @@
       </tr>
     </thead>
     <tbody>
-      <tr><td>.ls-float-right-sm</td><td>Insere float: right apenas para resolução acima de 768px</td></tr>
-      <tr><td>.ls-btn-block-sm</td><td>Faz com que o botão fique com visual de block na resolução abaixo de 768px</td></tr>
+      <tr><td colspan="2"><h5 class="doc-title-5 ls-no-margin">Até 480px - classes com final "xs"</h5></td></tr>
+      <tr><td>.ls-float-none-xs</td><td><code>float: none</code> para resoluções até 480px.</td></tr>
+      <tr><td>.ls-float-right-xs</td><td><code>float: right</code> para resoluções até 480px.</td></tr>
+      <tr><td>.ls-float-left-xs</td><td><code>float: left</code> para resoluções até 480px.</td></tr>
+      <tr><td>.ls-display-none-xs</td><td><code>display: none</code> para resoluções até 480px.</td></tr>
+      <tr><td>.ls-display-inline-xs</td><td><code>display: inline</code> para resoluções até 480px.</td></tr>
+      <tr><td>.ls-display-inline-block-xs</td><td><code>display: inline-block</code> para resoluções até 480px.</td></tr>
+      <tr><td>.ls-display-block-xs</td><td><code>display: block</code> para resoluções até 480px.</td></tr>
+
+      <tr><td colspan="2"><h5 class="doc-title-5 ls-no-margin">Até 768px - classes com final "sm"</h5></td></tr>
+      <tr><td>.ls-float-none-sm</td><td><code>float: none</code> para resoluções até 768px.</td></tr>
+      <tr><td>.ls-float-right-sm</td><td><code>float: right</code> para resoluções até 768px.</td></tr>
+      <tr><td>.ls-float-left-sm</td><td><code>float: left</code> para resoluções até 768px.</td></tr>
+      <tr><td>.ls-display-none-sm</td><td><code>display: none</code> para resoluções até 768px.</td></tr>
+      <tr><td>.ls-display-inline-sm</td><td><code>display: inline</code> para resoluções até 768px.</td></tr>
+      <tr><td>.ls-display-inline-block-sm</td><td><code>display: inline-block</code> para resoluções até 768px.</td></tr>
+      <tr><td>.ls-display-block-sm</td><td><code>display: block</code> para resoluções até 768px.</td></tr>
+      <tr><td>.ls-clear-right-sm</td><td><code>clear: right</code> para resoluções até 768px.</td></tr>
+      <tr><td>.ls-clear-left-sm</td><td><code>clear: left</code> para resoluções até 768px.</td></tr>
+      <tr><td>.ls-clear-both-sm</td><td><code>clear: both</code> para resoluções até 768px.</td></tr>
+      <tr><td>.ls-txt-right-sm</td><td><code>text-align: right</code> para resoluções até 768px.</td></tr>
+      <tr><td>.ls-txt-left-sm</td><td><code>text-align: left</code> para resoluções até 768px.</td></tr>
+      <tr><td>.ls-btn-block-sm</td><td>Deixa o botão block para resoluções até 768px.</td></tr>
+
+
+      <tr><td colspan="2"><h5 class="doc-title-5 ls-no-margin">Até 992px - classes com final "md"</h5></td></tr>
+      <tr><td>.ls-float-none-md</td><td><code>float: none</code> para resoluções até 992px.</td></tr>
+      <tr><td>.ls-float-right-md</td><td><code>float: right</code> para resoluções até 992px.</td></tr>
+      <tr><td>.ls-float-left-md</td><td><code>float: left</code> para resoluções até 992px.</td></tr>
+      <tr><td>.ls-display-none-md</td><td><code>display: none</code> para resoluções até 992px.</td></tr>
+      <tr><td>.ls-display-inline-md</td><td><code>display: inline</code> para resoluções até 992px.</td></tr>
+      <tr><td>.ls-display-inline-block-md</td><td><code>display: inline-block</code> para resoluções até 992px.</td></tr>
+      <tr><td>.ls-display-block-md</td><td><code>display: block</code> para resoluções até 992px.</td></tr>
+      <tr><td>.ls-clear-right-md</td><td><code>clear: right</code> para resoluções até 992px.</td></tr>
+      <tr><td>.ls-clear-left-md</td><td><code>clear: left</code> para resoluções até 992px.</td></tr>
+      <tr><td>.ls-clear-both-md</td><td><code>clear: both</code> para resoluções até 992px.</td></tr>
+      <tr><td>.ls-txt-right-md</td><td><code>text-align: right</code> para resoluções até 992px.</td></tr>
+      <tr><td>.ls-txt-left-md</td><td><code>text-align: left</code> para resoluções até 992px.</td></tr>
+      <tr><td>.ls-btn-block-md</td><td>Deixa o botão block para resoluções até 992px.</td></tr>
+
+      <tr><td colspan="2"><h5 class="doc-title-5 ls-no-margin">Até 1200px - classes com final "lg"</h5></td></tr>
+      <tr><td>.ls-float-none-lg</td><td><code>float: none</code> para resoluções até 1200px.</td></tr>
+      <tr><td>.ls-float-right-lg</td><td><code>float: right</code> para resoluções até 1200px.</td></tr>
+      <tr><td>.ls-float-left-lg</td><td><code>float: left</code> para resoluções até 1200px.</td></tr>
+      <tr><td>.ls-display-none-lg</td><td><code>display: none</code> para resoluções até 1200px.</td></tr>
+      <tr><td>.ls-display-inline-lg</td><td><code>display: inline</code> para resoluções até 1200px.</td></tr>
+      <tr><td>.ls-display-inline-block-lg</td><td><code>display: inline-block</code> para resoluções até 1200px.</td></tr>
+      <tr><td>.ls-display-block-lg</td><td><code>display: block</code> para resoluções até 1200px.</td></tr>
     </tbody>
   </table>
 </section>

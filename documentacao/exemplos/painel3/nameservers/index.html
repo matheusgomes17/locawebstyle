@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="ls-theme-orange  ">
+<head>
+  <title>Servidores de DNS</title>
+
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="icon" sizes="192x192" href="/locawebstyle/assets/images/ico-painel2.png">
+    <link rel="apple-touch-icon" href="/locawebstyle/assets/images/ico-painel2.png">
+    <meta name="apple-mobile-web-app-title" content="Painel 2">
+
+  <link href="../../../../assets/stylesheets/locastyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="documentacao documentacao_exemplos documentacao_exemplos_painel3 documentacao_exemplos_painel3_nameservers documentacao_exemplos_painel3_nameservers_index">
+
+  <div class="ls-topbar">
+
+  <!-- Barra de Notificações -->
+  <div class="ls-notification-topbar">
+
+    <!-- Links de apoio -->
+    <div class="ls-alerts-list">
+      <a href="#" class="ls-ico-bell-o" data-counter="8" data-ls-module="topbarCurtain" data-target="#ls-notification-curtain"><span>Notificações</span></a>
+      <a href="#" class="ls-ico-bullhorn" data-ls-module="topbarCurtain" data-target="#ls-help-curtain"><span>Ajuda</span></a>
+      <a href="#" class="ls-ico-question" data-ls-module="topbarCurtain" data-target="#ls-feedback-curtain"><span>Sugestões</span></a>
+    </div>
+
+    <!-- Dropdown com detalhes da conta de usuário -->
+    <div data-ls-module="dropdown" class="ls-dropdown ls-user-account">
+      <a href="#" class="ls-ico-user">
+        <span class="ls-name">João</span>
+        (fmolina)
+      </a>
+      <nav class="ls-dropdown-nav ls-user-menu">
+        <ul>
+          <li><a href="#">Meus dados</a></li>
+          <li><a href="#">Faturas</a></li>
+          <li><a href="#">Planos</a></li>
+          <li><a href="#">Sair</a></li>
+         </ul>
+      </nav>
+    </div>
+  </div>
+
+  <span class="ls-show-sidebar ls-ico-menu"></span>
+
+  <a href="/locawebstyle/documentacao/exemplos//pre-painel"  class="ls-go-next"><span class="ls-text">Voltar à lista de serviços</span></a>
+
+  <!-- Nome do produto/marca -->
+    <h1 class="ls-brand-name">
+      <a href="home" class="ls-ico-earth">
+        <small>Registro de Domínio</small>
+        fmolina
+      </a>
+    </h1>
+</div>
+
+
+  <aside class="ls-sidebar">
+      <div data-ls-module="dropdown" class="ls-dropdown ls-user-account">
+  <a href="#" class="ls-ico-user">
+    <span class="ls-name">João</span>
+    (fmolina)</small>
+  </a>
+  <nav class="ls-dropdown-nav ls-user-menu">
+    <a href="#" class="ls-btn-logout">Sair</a>
+  </nav>
+</div>
+  <div data-ls-module="dropdown" class="ls-dropdown ls-user-account">
+    <a href="#" class="ls-ico-user">
+      João
+      <small>(fmolina)</small>
+    </a>
+    <nav class="ls-dropdown-nav ls-user-menu">
+      <a href="#" class="ls-btn-logout">Sair</a>
+    </nav>
+  </div>
+  <div class="ls-sidebar-inner">
+    <a href="/locawebstyle/documentacao/exemplos//pre-painel"  class="ls-go-prev"><span class="ls-text">Voltar à lista de serviços</span></a>
+    <nav class="ls-menu">
+      <ul>
+      <li><a href="/locawebstyle/documentacao/exemplos/painel3/nameservers" class="ls-ico-globe">Servidores de DNS</a></li>
+        <!-- <li><a href="/locawebstyle/documentacao/exemplos/painel3/base" class="ls-ico-home">Primeiros passos</a></li> -->
+        <li><a href="/locawebstyle/documentacao/exemplos/painel3/contacts" class="ls-ico-users">Contatos</a></li>
+        <li><a href="/locawebstyle/documentacao/exemplos/painel3/stats" class="ls-ico-cog">Transferência de domínio</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  </aside>
+
+  <main class="ls-main ">
+    <div class="container-fluid">
+      <h1 class="ls-title-intro ls-ico-globe">Servidores de DNS</h1>
+<p>Os servidores de DNS são responsáveis por responder as requisições de acesso ao seu domínio.</p>
+
+<div class="ls-box">
+  <table class="ls-table ls-table-striped">
+    <tbody>
+      <tr>
+        <td><strong>Primário (Master): </strong>ns1.systemintegration.locaweb.com</td>
+      </tr>
+      <tr>
+        <td><strong>Secundário (Slave 1): </strong>ns2.systemintegration.locaweb.com</td>
+      </tr>
+      <tr>
+        <td><strong>Terciário (Slave 2): </strong><em>Opcional</em></td>
+      </tr>
+    </tbody>
+  </table>
+  <a class="ls-btn-primary ls-btn-sm" href="/locawebstyle/documentacao/exemplos/painel3/nameservers/edit">Alterar servidores</a>
+</div>
+<div class="ls-box">
+  <h2 class="ls-title-3">Zona de DNS</h2>
+  <p>Zona de DNS é a área onde você cria e edita entradas de DNS para configurar servidores de e-mail, endereços de apontamento, etc.</p>
+  <a class="ls-btn-primary ls-btn-sm" href="http://painel-dns.registro.devintegration.locaweb.com.br/dns_zones/teste-contato-dominio-01.com/dns_entries">Consulte e altere zona de DNS</a>
+</div>
+
+
+    </div>
+
+    <footer class="ls-footer" role="contentinfo">
+  <nav class="ls-footer-menu">
+      <h2 class="ls-title-footer">suporte e ajuda</h2>
+      <ul class="ls-footer-list">
+        <li>
+          <a href="#" target="_blank" class="bg-customer-support">
+            <span class="visible-lg">Atendimento</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="bg-my-tickets">
+            <span class="visible-lg">Meus Chamados</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="bg-help-desk">
+            <span class="visible-lg">Central de Ajuda (Wiki)</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="bg-statusblog">
+            <span class="visible-lg">Statusblog</span>
+          </a>
+        </li>
+      </ul>
+  </nav>
+  <div class="ls-footer-info">
+    <span class="last-access ls-ico-screen"><strong>Último acesso: </strong>99/99/9999 99:99:99</span>
+    <div class="set-ip"><strong>IP:</strong> 000.00.00.000</div>
+    <p class="ls-copy-right">Copyright © 1997-2014 Serviços de Internet S/A.</p>
+  </div>
+</footer>
+
+  </main>
+
+
+  <aside class="ls-notification">
+    <nav class="ls-notification-list" id="ls-notification-curtain">
+      <h3 class="ls-title-2">Notificações</h3>
+      <ul>
+          <li class="ls-dismissable">
+            <a href="#">Et necessitatibus accusantium quos est omnis nulla praesentium</a>
+            <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
+          </li>
+          <li class="ls-dismissable">
+            <a href="#">Vero possimus dolorem eveniet autem quibusdam quisquam nam dolorem sit est dolore</a>
+            <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
+          </li>
+          <li class="ls-dismissable">
+            <a href="#">Magni fuga aut et est placeat dignissimos ipsum expedita</a>
+            <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
+          </li>
+          <li class="ls-dismissable">
+            <a href="#">Minus et eveniet voluptas non distinctio</a>
+            <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
+          </li>
+          <li class="ls-dismissable">
+            <a href="#">Dolor officia et quasi quasi cum perspiciatis</a>
+            <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
+          </li>
+      </ul>
+      <p class="ls-no-notification-message">Não há notificações.</p>
+    </nav>
+    <nav class="ls-notification-list" id="ls-help-curtain">
+      <h3 class="ls-title-2">Feedback</h3>
+      <ul>
+          <li><a href="#">> provident molestias ad deserunt neque omnis</a></li>
+          <li><a href="#">> ab qui consequatur dolore nostrum et</a></li>
+      </ul>
+    </nav>
+    <nav class="ls-notification-list" id="ls-feedback-curtain">
+      <h3 class="ls-title-2">Ajuda</h3>
+      <ul>
+        <li class="ls-txt-center hidden-xs">
+          <a href="#" class="ls-btn-dark ls-btn-tour">Fazer um Tour</a>
+        </li>
+        <li><a href="#">> Guia</a></li>
+        <li><a href="#">> Wiki</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <script src="../../../../assets/javascripts/libs/jquery-2.1.0.min.js" type="text/javascript"></script><script src="../../../../assets/javascripts/example.js" type="text/javascript"></script><script src="../../../../assets/javascripts/locastyle.js" type="text/javascript"></script><script src="//code.highcharts.com/highcharts.js" type="text/javascript"></script><script src="../../../../assets/javascripts/docs/panel-charts.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    $(window).load(function() {
+      locastyle.browserUnsupportedBar.init();
+    });
+  </script>
+
+</body>
+</html>

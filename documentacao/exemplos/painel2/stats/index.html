@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html class="ls-theme-light-green  ">
 <head>
+  <title>Relatórios</title>
+
   <meta charset="utf-8">
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <title>Relatórios</title>
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="icon" sizes="192x192" href="/locawebstyle/assets/images/ico-painel2.png">
+    <link rel="apple-touch-icon" href="/locawebstyle/assets/images/ico-painel2.png">
+    <meta name="apple-mobile-web-app-title" content="Painel 2">
+
   <link href="../../../../assets/stylesheets/locastyle.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="documentacao documentacao_exemplos documentacao_exemplos_painel2 documentacao_exemplos_painel2_stats documentacao_exemplos_painel2_stats_index">
@@ -26,8 +34,8 @@
     <!-- Dropdown com detalhes da conta de usuário -->
     <div data-ls-module="dropdown" class="ls-dropdown ls-user-account">
       <a href="#" class="ls-ico-user">
-        João
-      <small>(fmolina)</small>
+        <span class="ls-name">João</span>
+        (fmolina)
       </a>
       <nav class="ls-dropdown-nav ls-user-menu">
         <ul>
@@ -41,12 +49,55 @@
   </div>
 
   <span class="ls-show-sidebar ls-ico-menu"></span>
-  <span class="ls-show-notifications ls-ico-question"></span>
+
+  <a href="/locawebstyle/documentacao/exemplos/painel2/pre-painel"  class="ls-go-next"><span class="ls-text">Voltar à lista de serviços</span></a>
 
   <!-- Nome do produto/marca -->
-    <h1 class="ls-brand-name"><a class="ls-ico-earth" href="../home">SMTP Locaweb</a></h1>
+    <h1 class="ls-brand-name">
+      <a href="home" class="ls-ico-earth">
+        <small>SMTP Locaweb</small>
+        fmolina
+      </a>
+    </h1>
 </div>
 
+
+  <aside class="ls-sidebar">
+      <div data-ls-module="dropdown" class="ls-dropdown ls-user-account">
+  <a href="#" class="ls-ico-user">
+    <span class="ls-name">João Marques Gonçalves deiivd</span>
+    (fmolina)</small>
+  </a>
+  <nav class="ls-dropdown-nav ls-user-menu">
+    <ul>
+      <li><a href="#">Meus dados</a></li>
+      <li><a href="#">Faturas</a></li>
+      <li><a href="#">Planos</a></li>
+     </ul>
+     <a href="#" class="ls-btn-logout">Sair</a>
+  </nav>
+</div>
+  <div class="ls-sidebar-inner">
+    <a href="/locawebstyle/documentacao/exemplos/painel2/pre-painel"  class="ls-go-prev"><span class="ls-text">Voltar à lista de serviços</span></a>
+    <nav class="ls-menu">
+      <ul>
+        <li><a href="/locawebstyle/documentacao/exemplos/painel2/home" class="ls-ico-dashboard">Dashboard</a></li>
+        <li><a href="/locawebstyle/documentacao/exemplos/painel2/stats" class="ls-ico-stats">Relatórios</a></li>
+        <li class="ls-submenu">
+          <a href="#" class="ls-ico-cog">Configurações</a>
+          <ul>
+            <li><a class="ls-submenu-item" href="/locawebstyle/documentacao/exemplos/painel2/config-server">Dados do Servidor SMTP</a></li>
+            <li><a class="ls-submenu-item" href="/locawebstyle/documentacao/exemplos/painel2/config-email">E-mail de remetente</a></li>
+            <li><a class="ls-submenu-item" href="/locawebstyle/documentacao/exemplos/painel2/config-excess">Envios excedentes</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+  </aside>
 
   <main class="ls-main ">
     <div class="container-fluid">
@@ -56,7 +107,7 @@
   <form action="#" class="ls-form ls-form-inline ls-float-left">
     <label class="ls-label">
       <b class="ls-label-text">Período</b>
-      <div data-ls-module="customFields">
+      <div class="ls-custom-select">
         <select name="">
           <option value="">Dia atual</option>
           <option value="">Última semana</option>
@@ -71,62 +122,71 @@
       <ul class="ls-dropdown-nav">
         <li><a href="#" data-ls-module="modal" data-target="#modal_export">CSV</a></li>
         <li><a href="#" data-ls-module="modal" data-target="#modal_export">XLS</a></li>
-        <li><a href="#" data-ls-module="modal" data-target="#modal_exported_reports">Relatórios exportados</a></li>
+        <li><a href="#" class="ls-divider" data-ls-module="modal" data-target="#modal_exported_reports">Relatórios exportados</a></li>
       </ul>
     </div>
   </form>
-  <div class="ls-group-btn ls-group-active ls-float-right">
-    <button type="button" data-ls-module="tabs" data-target=".child1" class="ls-btn ls-active ls-ico-chart-bar-up"></button>
-    <button type="button" data-ls-module="tabs" data-target=".child2" class="ls-btn ls-ico-table-alt"></button>
+</div>
+
+<div class="ls-box ls-board-box">
+  <div id="sending-stats" class="row">
+    <div class="col-sm-3">
+      <div class="ls-box">
+        <h6 class="ls-title-4">Enviados</h6>
+        <span class="ls-board-data">
+          <strong>33</strong>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="ls-box">
+        <h6 class="ls-title-4">Entregues</h6>
+        <span class="ls-board-data">
+          <strong>27</strong>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="ls-box">
+        <h6 class="ls-title-4">Erros</h6>
+        <span class="ls-board-data">
+          <strong>16</strong>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="ls-box">
+        <h6 class="ls-title-4">Denúncias <a href="#" class="ls-ico-help" data-trigger="hover" data-ls-module="popover" data-placement="left" data-custom-classes="ls-width-300" data-content="<p>Este número corresponde ao número de vezes que seus destinatários marcaram suas mensagens como spam. Essas denúncias podem comprometer a entregabilidade das suas próximas mensagens.</p>"></a></h6>
+        <span class="ls-board-data">
+          <strong>1</strong>
+        </span>
+      </div>
+    </div>
   </div>
 </div>
 
+<div class="ls-group-btn ls-group-active ls-float-right">
+  <button type="button" data-ls-module="tabs" data-target=".child1" class="ls-btn ls-active ls-ico-chart-bar-up"></button>
+  <button type="button" data-ls-module="tabs" data-target=".child2" class="ls-btn ls-ico-table-alt"></button>
+</div>
 
 <ul class="ls-tabs-nav" id="awesome-tab">
   <li class="ls-active"><a data-ls-module="tabs" href="#tab1">Geral</a></li>
   <li><a data-ls-module="tabs" href="#tab2">Erros</a></li>
+  <li><a data-ls-module="tabs" href="#tab3">Denúncias</a></li>
 </ul>
+
 <div class="ls-tabs-container" id="awesome-tab-content">
   <div id="tab1" class="ls-tab-content ls-active">
 
-    <div class="ls-board-box">
-        <div id="sending-stats" class="row">
-          <div class="col-sm-4">
-            <div class="ls-box">
-              <h6 class="ls-title-4">Enviados</h6>
-              <span class="ls-board-data">
-                <strong>33</strong>
-              </span>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="ls-box">
-              <h6 class="ls-title-4">Entregues</h6>
-              <span class="ls-board-data">
-                <strong>27</strong>
-              </span>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="ls-box">
-              <h6 class="ls-title-4">Erros</h6>
-              <span class="ls-board-data">
-                <strong>16</strong>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
     <div class="ls-tab-content child1 ls-active">
-
-      <img style="width: 100%;" src="/locawebstyle/assets/images/graph-example-2.jpg">
-
+      <div id="panel-charts-2"></div>
     </div>
 
     <div class="ls-tab-content child2">
-
 
       <table class="ls-table">
         <thead>
@@ -134,6 +194,7 @@
             <th class="ls-txt-center">Hora</th>
             <th class="ls-txt-center">Enviados</th>
             <th class="ls-txt-center hidden-xs">Bounces</th>
+            <th class="ls-txt-center hidden-xs">Denúncias</th>
           </tr>
         </thead>
         <tbody>
@@ -141,30 +202,37 @@
               <td class="ls-txt-center">00h</td>
               <td class="ls-txt-center">0</td>
               <td class="ls-txt-center hidden-xs">0</td>
-            </tr>
-            <tr>
-              <td class="ls-txt-center">00h</td>
-              <td class="ls-txt-center">0</td>
               <td class="ls-txt-center hidden-xs">0</td>
             </tr>
             <tr>
               <td class="ls-txt-center">00h</td>
               <td class="ls-txt-center">0</td>
               <td class="ls-txt-center hidden-xs">0</td>
-            </tr>
-            <tr>
-              <td class="ls-txt-center">00h</td>
-              <td class="ls-txt-center">0</td>
               <td class="ls-txt-center hidden-xs">0</td>
             </tr>
             <tr>
               <td class="ls-txt-center">00h</td>
               <td class="ls-txt-center">0</td>
+              <td class="ls-txt-center hidden-xs">0</td>
+              <td class="ls-txt-center hidden-xs">0</td>
+            </tr>
+            <tr>
+              <td class="ls-txt-center">00h</td>
+              <td class="ls-txt-center">0</td>
+              <td class="ls-txt-center hidden-xs">0</td>
+              <td class="ls-txt-center hidden-xs">0</td>
+            </tr>
+            <tr>
+              <td class="ls-txt-center">00h</td>
+              <td class="ls-txt-center">0</td>
+              <td class="ls-txt-center hidden-xs">0</td>
               <td class="ls-txt-center hidden-xs">0</td>
             </tr>
         </tbody>
       </table>
     </div>
+
+    <hr>
 
     <p><a href="#" data-toggle-class="ls-display-none" data-target="#infoAll">Exibir detalhes por destinatário</a></p>
 
@@ -172,48 +240,48 @@
       <table class="ls-table">
         <thead>
           <tr>
-            <th>Data</th>
+            <th class="hidden-xs">Data</th>
             <th>Remetente</th>
             <th>Destinatário</th>
             <th>Status do envio</th>
-            <th>Assunto</th>
+            <th class="hidden-xs">Assunto</th>
           </tr>
         </thead>
         <tbody>
             <tr>
-              <td>Wed Apr 30, 1997</td>
-              <td>jared_golden@fastmail.com</td>
-              <td>lailahouston@email.com</td>
+              <td class="hidden-xs">Fri Dec 23, 1994</td>
+              <td>earllane@gmail.com</td>
+              <td>eli_stone@fastmail.com</td>
               <td>Entregue</td>
-              <td>Corrupti ea earum minus cupiditate hic ut</td>
+              <td class="hidden-xs">Rerum ad rem labore</td>
             </tr>
             <tr>
-              <td>Sun Apr 04, 1999</td>
-              <td>terryfloyd@gmail.com</td>
-              <td>quinncowan@mail.com</td>
+              <td class="hidden-xs">Fri Apr 22, 1994</td>
+              <td>abel_holmes@mail.com</td>
+              <td>ciara-sparks@mail.com</td>
               <td>Entregue</td>
-              <td>Sunt quisquam perspiciatis maiores provident</td>
+              <td class="hidden-xs">Accusamus et et pariatur vitae</td>
             </tr>
             <tr>
-              <td>Sun Aug 21, 2005</td>
-              <td>abigailobrien@me.com</td>
-              <td>marsha-morgan@mail.com</td>
+              <td class="hidden-xs">Sat Mar 18, 2006</td>
+              <td>constance-moon@gmail.com</td>
+              <td>donvick@mac.com</td>
               <td>Entregue</td>
-              <td>Quia sit sapiente ullam sapiente asperiores ratione fugit facere eius saepe quisquam adipisci debitis</td>
+              <td class="hidden-xs">Officiis placeat deleniti aliquid at</td>
             </tr>
             <tr>
-              <td>Tue Feb 26, 2008</td>
-              <td>mariannegray@me.com</td>
-              <td>ericsiegel@email.com</td>
+              <td class="hidden-xs">Sat Jun 01, 2002</td>
+              <td>stephanie_hodge@yahoo.com</td>
+              <td>adriannafox@gmail.com</td>
               <td>Entregue</td>
-              <td>Aut aliquid est sunt ab iste consequatur vitae et eligendi fugiat perspiciatis</td>
+              <td class="hidden-xs">Impedit sit iure repellendus quo</td>
             </tr>
             <tr>
-              <td>Sat Jul 14, 2007</td>
-              <td>marianne-woodard@fastmail.com</td>
-              <td>caitlyn-stone@yahoo.com</td>
+              <td class="hidden-xs">Mon Feb 28, 2005</td>
+              <td>penny-puckett@fastmail.com</td>
+              <td>allyson_rodgers@live.com</td>
               <td>Entregue</td>
-              <td>Quia natus sunt voluptate</td>
+              <td class="hidden-xs">Sed aut atque alias numquam sed qui rem quos magni quis magni</td>
             </tr>
         </tbody>
       </table>
@@ -224,7 +292,7 @@
 
     <div class="ls-tab-content child1 ls-active">
       <p>Erros de recebimento para 6 destinatários</p>
-      <img style="width: 100%;" src="/locawebstyle/assets/images/graph-example-2.jpg">
+      <div id="panel-chart-pie-errors"></div>
     </div>
 
     <div class="ls-tab-content child2">
@@ -263,47 +331,85 @@
         </thead>
         <tbody>
             <tr>
-              <td>Sun Apr 19, 1998</td>
-              <td>noel-holmes@mac.com</td>
-              <td>isabelhanna@gmail.com</td>
+              <td>Tue Aug 01, 1995</td>
+              <td>caleb_weinstein@mac.com</td>
+              <td>bonnie-branch@gmail.com</td>
               <td>Entregue</td>
-              <td>Reiciendis et tempora amet dignissimos</td>
+              <td>Consequuntur ut voluptatibus quaerat iste eius culpa totam est fugit ut repellat</td>
             </tr>
             <tr>
-              <td>Thu Aug 25, 1994</td>
-              <td>annika-rich@me.com</td>
-              <td>toby_chandler@fastmail.com</td>
+              <td>Mon Nov 06, 1995</td>
+              <td>hector_lamb@hotmail.com</td>
+              <td>sienna_rich@aol.com</td>
               <td>Entregue</td>
-              <td>Non accusamus molestiae quis voluptatem sed quod est corporis deserunt voluptate nobis quam architecto</td>
+              <td>Odit aliquid fugit aspernatur quia vel numquam rerum consequatur quia ipsa nihil quisquam facilis</td>
             </tr>
             <tr>
-              <td>Thu Jan 11, 1996</td>
-              <td>zachariahchung@aol.com</td>
-              <td>caleb-singer@yahoo.com</td>
+              <td>Sun Dec 24, 1995</td>
+              <td>eric_branch@mail.com</td>
+              <td>raulchung@fastmail.com</td>
               <td>Entregue</td>
-              <td>Dolorem quaerat et magni nobis est nobis harum</td>
+              <td>Soluta et rerum ea magni ut ad distinctio eius in enim saepe autem</td>
             </tr>
             <tr>
-              <td>Sat Mar 26, 1994</td>
-              <td>ashton-raynor@aol.com</td>
-              <td>siennaweeks@fastmail.com</td>
+              <td>Tue Feb 25, 2003</td>
+              <td>janet-petersen@mail.com</td>
+              <td>alonzo-heath@yahoo.com</td>
               <td>Entregue</td>
-              <td>Et voluptatibus nobis voluptates cumque</td>
+              <td>Exercitationem labore qui ad in impedit nam aspernatur numquam aut magni eveniet beatae quibusdam</td>
             </tr>
             <tr>
-              <td>Mon Dec 09, 1996</td>
-              <td>arturobaker@live.com</td>
-              <td>gordonmclaughlin@gmail.com</td>
+              <td>Tue Sep 03, 1996</td>
+              <td>leslie_neal@mac.com</td>
+              <td>mitzi_petersen@live.com</td>
               <td>Entregue</td>
-              <td>Maxime dicta aut sit doloribus repellat dolorem non et quia est voluptatem fuga suscipit autem</td>
+              <td>Eum ipsam ut suscipit voluptas illo sit dolorum quia</td>
             </tr>
         </tbody>
       </table>
     </div>
 
   </div>
-</div>
 
+  <div id="tab3" class="ls-tab-content">
+    <div class="child1 ls-tab-content ls-active">
+      <div id="panel-chart-pie-complaints"></div>
+    </div>
+
+    <div class="ls-tab-content child2">
+
+      <table class="ls-table">
+        <thead>
+          <tr>
+            <th class="ls-txt-center">Hora</th>
+            <th class="ls-txt-center hidden-xs">Denúncias</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td class="ls-txt-center">00h</td>
+              <td class="ls-txt-center">0</td>
+            </tr>
+            <tr>
+              <td class="ls-txt-center">00h</td>
+              <td class="ls-txt-center">0</td>
+            </tr>
+            <tr>
+              <td class="ls-txt-center">00h</td>
+              <td class="ls-txt-center">0</td>
+            </tr>
+            <tr>
+              <td class="ls-txt-center">00h</td>
+              <td class="ls-txt-center">0</td>
+            </tr>
+            <tr>
+              <td class="ls-txt-center">00h</td>
+              <td class="ls-txt-center">0</td>
+            </tr>
+        </tbody>
+      </table>
+  </div>
+</div>
 
 <!-- Modal de exportação -->
 <div class="ls-modal fade" id="modal_export">
@@ -317,7 +423,7 @@
         <fieldset>
           <label class="ls-label col-md-5">
             <b class="ls-label-text">Período</b>
-            <div data-ls-module="customFields">
+            <div class="ls-custom-select">
               <select name="">
                 <option value="">Dia atual</option>
                 <option value="">Última semana</option>
@@ -373,16 +479,18 @@
         <thead>
           <tr>
             <th>Nome do arquivo</th>
-            <th>Data da criação</th>
+            <th class="ls-width-100"></th>
           </tr>
         </thead>
         <tbody>
             <tr>
-              <td>Relatorios_Enviados_02-07-2013_01-07-2014.csv</td>
               <td>
-                <p>01/07/2014 - 10:03</p>
-                <div data-ls-module="dropdown" class="ls-dropdown ls-pos-right">
-                  <a href="#" class="ls-btn-sm">Ações </a>
+                <a href="#">Relatorios_Enviados_02-07-2013_01-07-2014.csv</a>
+                <p><strong>Data de criação: </strong>02/07/2013 - 14:30</p>
+              </td>
+              <td>
+                <div data-ls-module="dropdown" class="ls-dropdown ls-pos-right ls-float-right">
+                  <a href="#" class="ls-btn-sm"></a>
                   <ul class="ls-dropdown-nav">
                     <li><a href="#" >Baixar arquivo</a></li>
                     <li><a href="#" class="ls-color-danger">Excluir</a></li>
@@ -391,11 +499,13 @@
               </td>
             </tr>
             <tr>
-              <td>Relatorios_Enviados_02-07-2013_01-07-2014.csv</td>
               <td>
-                <p>01/07/2014 - 10:03</p>
-                <div data-ls-module="dropdown" class="ls-dropdown ls-pos-right">
-                  <a href="#" class="ls-btn-sm">Ações </a>
+                <a href="#">Relatorios_Enviados_02-07-2013_01-07-2014.csv</a>
+                <p><strong>Data de criação: </strong>02/07/2013 - 14:30</p>
+              </td>
+              <td>
+                <div data-ls-module="dropdown" class="ls-dropdown ls-pos-right ls-float-right">
+                  <a href="#" class="ls-btn-sm"></a>
                   <ul class="ls-dropdown-nav">
                     <li><a href="#" >Baixar arquivo</a></li>
                     <li><a href="#" class="ls-color-danger">Excluir</a></li>
@@ -404,11 +514,13 @@
               </td>
             </tr>
             <tr>
-              <td>Relatorios_Enviados_02-07-2013_01-07-2014.csv</td>
               <td>
-                <p>01/07/2014 - 10:03</p>
-                <div data-ls-module="dropdown" class="ls-dropdown ls-pos-right">
-                  <a href="#" class="ls-btn-sm">Ações </a>
+                <a href="#">Relatorios_Enviados_02-07-2013_01-07-2014.csv</a>
+                <p><strong>Data de criação: </strong>02/07/2013 - 14:30</p>
+              </td>
+              <td>
+                <div data-ls-module="dropdown" class="ls-dropdown ls-pos-right ls-float-right">
+                  <a href="#" class="ls-btn-sm"></a>
                   <ul class="ls-dropdown-nav">
                     <li><a href="#" >Baixar arquivo</a></li>
                     <li><a href="#" class="ls-color-danger">Excluir</a></li>
@@ -417,11 +529,13 @@
               </td>
             </tr>
             <tr>
-              <td>Relatorios_Enviados_02-07-2013_01-07-2014.csv</td>
               <td>
-                <p>01/07/2014 - 10:03</p>
-                <div data-ls-module="dropdown" class="ls-dropdown ls-pos-right">
-                  <a href="#" class="ls-btn-sm">Ações </a>
+                <a href="#">Relatorios_Enviados_02-07-2013_01-07-2014.csv</a>
+                <p><strong>Data de criação: </strong>02/07/2013 - 14:30</p>
+              </td>
+              <td>
+                <div data-ls-module="dropdown" class="ls-dropdown ls-pos-right ls-float-right">
+                  <a href="#" class="ls-btn-sm"></a>
                   <ul class="ls-dropdown-nav">
                     <li><a href="#" >Baixar arquivo</a></li>
                     <li><a href="#" class="ls-color-danger">Excluir</a></li>
@@ -430,11 +544,13 @@
               </td>
             </tr>
             <tr>
-              <td>Relatorios_Enviados_02-07-2013_01-07-2014.csv</td>
               <td>
-                <p>01/07/2014 - 10:03</p>
-                <div data-ls-module="dropdown" class="ls-dropdown ls-pos-right">
-                  <a href="#" class="ls-btn-sm">Ações </a>
+                <a href="#">Relatorios_Enviados_02-07-2013_01-07-2014.csv</a>
+                <p><strong>Data de criação: </strong>02/07/2013 - 14:30</p>
+              </td>
+              <td>
+                <div data-ls-module="dropdown" class="ls-dropdown ls-pos-right ls-float-right">
+                  <a href="#" class="ls-btn-sm"></a>
                   <ul class="ls-dropdown-nav">
                     <li><a href="#" >Baixar arquivo</a></li>
                     <li><a href="#" class="ls-color-danger">Excluir</a></li>
@@ -442,12 +558,6 @@
                 </div>
               </td>
             </tr>
-          <tr>
-            <td>Relatorios_Enviados_02-07-2013_01-07-2014.csv <span class="ls-tag-danger">Falha...</span></td>
-            <td>
-              <p>20/06/2014 - 0:00</p>
-            </td>
-          </tr>
         </tbody>
       </table>
     </div>
@@ -460,7 +570,7 @@
     <footer class="ls-footer" role="contentinfo">
   <nav class="ls-footer-menu">
       <h2 class="ls-title-footer">suporte e ajuda</h2>
-      <ul>
+      <ul class="ls-footer-list">
         <li>
           <a href="#" target="_blank" class="bg-customer-support">
             <span class="visible-lg">Atendimento</span>
@@ -485,75 +595,36 @@
   </nav>
   <div class="ls-footer-info">
     <span class="last-access ls-ico-screen"><strong>Último acesso: </strong>99/99/9999 99:99:99</span>
-    <div class="set-ip"><span class="set-ip"><strong>IP:</strong> 000.00.00.000</span></div>
+    <div class="set-ip"><strong>IP:</strong> 000.00.00.000</div>
     <p class="ls-copy-right">Copyright © 1997-2014 Serviços de Internet S/A.</p>
   </div>
 </footer>
 
   </main>
 
-  <aside class="ls-sidebar">
-        <div data-ls-module="dropdown" class="ls-dropdown ls-user-account">
-    <a href="#" class="ls-ico-user">
-      João
-      <small>(fmolina)</small>
-    </a>
-    <nav class="ls-dropdown-nav ls-user-menu">
-      <ul>
-        <li><a href="#">Meus dados</a></li>
-        <li><a href="#">Faturas</a></li>
-        <li><a href="#">Planos</a></li>
-        <li><a href="#">Sair</a></li>
-       </ul>
-    </nav>
-  </div>
-  <!-- Dropdown com detalhes da conta de usuário -->
-  <div class="ls-area-account ls-ico-user">
-    <h2 class="ls-title-2">Administrando</h2>
-    <h3 class="ls-title-3">João da Silva</h3>
-    <a href="/locawebstyle/documentacao/exemplos/painel2/pre-painel" class="ls-btn-xs ls-btn-dark">VER TODOS</a>
-  </div>
-  <nav class="ls-menu">
-    <ul>
-      <li><a href="/locawebstyle/documentacao/exemplos/painel2/home" class="ls-ico-home">Página inicial</a></li>
-      <li><a href="/locawebstyle/documentacao/exemplos/painel2/stats" class="ls-ico-stats">Relatórios</a></li>
-      <li class="ls-submenu">
-        <a href="#" class="ls-ico-cog">Configurações</a>
-        <ul>
-          <li><a class="ls-submenu-item" href="/locawebstyle/documentacao/exemplos/painel2/config-server">Dados do Servidor SMTP</a></li>
-          <li><a class="ls-submenu-item" href="/locawebstyle/documentacao/exemplos/painel2/config-email">E-mail de remetente</a></li>
-          <li><a class="ls-submenu-item" href="/locawebstyle/documentacao/exemplos/painel2/config-excess">Envios excedentes</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-
-
-
-  </aside>
 
   <aside class="ls-notification">
     <nav class="ls-notification-list" id="ls-notification-curtain">
       <h3 class="ls-title-2">Notificações</h3>
       <ul>
           <li class="ls-dismissable">
-            <a href="#">Dolorum nihil eaque excepturi beatae excepturi excepturi corporis ut in quod adipisci</a>
+            <a href="#">Ea aliquam ad excepturi magni facilis ullam voluptatem sed</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
           <li class="ls-dismissable">
-            <a href="#">Aliquid occaecati molestiae fuga unde</a>
+            <a href="#">Sit repudiandae distinctio porro possimus dolores</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
           <li class="ls-dismissable">
-            <a href="#">Commodi hic labore ut reprehenderit odio quis quisquam id debitis</a>
+            <a href="#">Quas perspiciatis eos enim</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
           <li class="ls-dismissable">
-            <a href="#">Quidem voluptates rerum animi in error debitis quos laborum alias et assumenda sint at</a>
+            <a href="#">Aut aut praesentium et cum ut voluptatum voluptatibus facilis odio deserunt quia totam libero voluptatem</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
           <li class="ls-dismissable">
-            <a href="#">Repudiandae repudiandae esse ut tenetur</a>
+            <a href="#">Ut distinctio et itaque modi error dolor adipisci asperiores veritatis quod qui</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
       </ul>
@@ -562,8 +633,8 @@
     <nav class="ls-notification-list" id="ls-help-curtain">
       <h3 class="ls-title-2">Feedback</h3>
       <ul>
-          <li><a href="#">> ut et ut et quia et</a></li>
-          <li><a href="#">> corrupti iusto similique rem explicabo sit</a></li>
+          <li><a href="#">> provident est architecto est quisquam doloribus</a></li>
+          <li><a href="#">> voluptate voluptas debitis eos iste quis</a></li>
       </ul>
     </nav>
     <nav class="ls-notification-list" id="ls-feedback-curtain">
@@ -578,9 +649,13 @@
     </nav>
   </aside>
 
-  <script src="../../../../assets/javascripts/libs/jquery-2.1.0.min.js" type="text/javascript"></script>
-  <script src="../../../../assets/javascripts/locastyle.js" type="text/javascript"></script>
-  <script src="../../../../assets/javascripts/example.js" type="text/javascript"></script>
+  <script src="../../../../assets/javascripts/libs/jquery-2.1.0.min.js" type="text/javascript"></script><script src="../../../../assets/javascripts/example.js" type="text/javascript"></script><script src="../../../../assets/javascripts/locastyle.js" type="text/javascript"></script><script src="//code.highcharts.com/highcharts.js" type="text/javascript"></script><script src="../../../../assets/javascripts/docs/panel-charts.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    $(window).load(function() {
+      locastyle.browserUnsupportedBar.init();
+    });
+  </script>
 
 </body>
 </html>

@@ -32,7 +32,7 @@
     <li><a href="/locawebstyle">Home</a></li>
     <li><a href="/locawebstyle/documentacao/introducao/">Documentação</a></li>
     <li><a href="/locawebstyle/documentacao/introducao/boilerplate/">Comece por aqui</a></li>
-    <li><a href="/locawebstyle/changelog">Changelog</a></li>
+    <li><a href="https://github.com/locaweb/locawebstyle/releases">Changelog</a></li>
     <li><a href="http://locaweb.github.io/locawebstyle-v1/">Documentação V1</a></li>
     <li><a href="http://locaweb.github.io/locawebstyle-v2/">Documentação V2</a></li>
   </ul>
@@ -65,7 +65,8 @@
 
 <div class="doc-content container">
   <div class="row">
-    <aside class="col-md-3">
+    <aside class="doc-sidebar col-md-3">
+<div class="doc-sidebar-inner">
   <nav class="doc-sidebar-menu">
     <ul>
       <li class=''><a class='' href='/locawebstyle/documentacao/introducao/'>Informações iniciais</a></li>
@@ -73,9 +74,11 @@
       <li class=''><a class='' href='/locawebstyle/documentacao/praticas/css/'>Padrões de CSS</a></li>
       <li class=''><a class='' href='/locawebstyle/documentacao/praticas/javascript/'>Padrões de Javascript</a></li>
       <li class=''><a class='' href='/locawebstyle/documentacao/introducao/chrome/'>Extensão para Chrome</a></li>
+      <li class=''><a class='' href='/locawebstyle/documentacao/introducao/suporte-browsers/'>Suporte para Browsers Antigos</a></li>
       <li class=''><a class='' href='/locawebstyle/documentacao/introducao/contribua/'>Contribua</a></li>
     </ul>
   </nav>
+</div>
 </aside>
 
 <section class="col-md-9">
@@ -97,8 +100,32 @@
               <tr>
                 <td>
                   <label class="ls-display-block">
+                    <input name="files[]" type="checkbox" data-file="_alert.js" value="https://raw.githubusercontent.com/locaweb/locawebstyle/reboot/source/assets/javascripts/locastyle/_alert.js" data-dependence="">
+                    _alert.js
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="ls-display-block">
                     <input name="files[]" type="checkbox" data-file="_breakpoint-check.js" value="https://raw.githubusercontent.com/locaweb/locawebstyle/reboot/source/assets/javascripts/locastyle/_breakpoint-check.js" data-dependence="">
                     _breakpoint-check.js
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="ls-display-block">
+                    <input name="files[]" type="checkbox" data-file="_browser-detect.js" value="https://raw.githubusercontent.com/locaweb/locawebstyle/reboot/source/assets/javascripts/locastyle/_browser-detect.js" data-dependence="">
+                    _browser-detect.js
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="ls-display-block">
+                    <input name="files[]" type="checkbox" data-file="_browser-unsupported-bar.js" value="https://raw.githubusercontent.com/locaweb/locawebstyle/reboot/source/assets/javascripts/locastyle/_browser-unsupported-bar.js" data-dependence="">
+                    _browser-unsupported-bar.js
                   </label>
                 </td>
               </tr>
@@ -123,14 +150,6 @@
                   <label class="ls-display-block">
                     <input name="files[]" type="checkbox" data-file="_collapse.js" value="https://raw.githubusercontent.com/locaweb/locawebstyle/reboot/source/assets/javascripts/locastyle/_collapse.js" data-dependence="">
                     _collapse.js
-                  </label>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label class="ls-display-block">
-                    <input name="files[]" type="checkbox" data-file="_custom-fields.js" value="https://raw.githubusercontent.com/locaweb/locawebstyle/reboot/source/assets/javascripts/locastyle/_custom-fields.js" data-dependence="">
-                    _custom-fields.js
                   </label>
                 </td>
               </tr>
@@ -217,6 +236,14 @@
               <tr>
                 <td>
                   <label class="ls-display-block">
+                    <input name="files[]" type="checkbox" data-file="_sidebar-toggle.js" value="https://raw.githubusercontent.com/locaweb/locawebstyle/reboot/source/assets/javascripts/locastyle/_sidebar-toggle.js" data-dependence="">
+                    _sidebar-toggle.js
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="ls-display-block">
                     <input name="files[]" type="checkbox" data-file="_sidebars.js" value="https://raw.githubusercontent.com/locaweb/locawebstyle/reboot/source/assets/javascripts/locastyle/_sidebars.js" data-dependence="">
                     _sidebars.js
                   </label>
@@ -277,8 +304,8 @@
               <tr>
                 <td>
                   <label class="ls-display-block">
-                    <input name="files[]" type="checkbox" data-file="_accordeon.sass" value="https://raw.githubusercontent.com/locaweb/locawebstyle/reboot/source/assets/stylesheets/locastyle/modules/_accordeon.sass" data-dependence="">
-                    _accordeon.sass
+                    <input name="files[]" type="checkbox" data-file="_alert-box.scss" value="https://raw.githubusercontent.com/locaweb/locawebstyle/reboot/source/assets/stylesheets/locastyle/modules/_alert-box.scss" data-dependence="">
+                    _alert-box.scss
                   </label>
                 </td>
               </tr>
@@ -311,6 +338,14 @@
                   <label class="ls-display-block">
                     <input name="files[]" type="checkbox" data-file="_breadcrumb.sass" value="https://raw.githubusercontent.com/locaweb/locawebstyle/reboot/source/assets/stylesheets/locastyle/modules/_breadcrumb.sass" data-dependence="">
                     _breadcrumb.sass
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="ls-display-block">
+                    <input name="files[]" type="checkbox" data-file="_button-tooltip.sass" value="https://raw.githubusercontent.com/locaweb/locawebstyle/reboot/source/assets/stylesheets/locastyle/modules/_button-tooltip.sass" data-dependence="">
+                    _button-tooltip.sass
                   </label>
                 </td>
               </tr>
@@ -439,14 +474,6 @@
                   <label class="ls-display-block">
                     <input name="files[]" type="checkbox" data-file="_progress-bar.sass" value="https://raw.githubusercontent.com/locaweb/locawebstyle/reboot/source/assets/stylesheets/locastyle/modules/_progress-bar.sass" data-dependence="">
                     _progress-bar.sass
-                  </label>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label class="ls-display-block">
-                    <input name="files[]" type="checkbox" data-file="_shortcuts.sass" value="https://raw.githubusercontent.com/locaweb/locawebstyle/reboot/source/assets/stylesheets/locastyle/modules/_shortcuts.sass" data-dependence="">
-                    _shortcuts.sass
                   </label>
                 </td>
               </tr>
@@ -585,6 +612,14 @@
               <tr>
                 <td>
                   <label class="ls-display-block">
+                    <input name="files[]" type="checkbox" data-file="_offcanvas.sass" value="https://raw.githubusercontent.com/locaweb/locawebstyle/reboot/source/assets/stylesheets/locastyle/base/_offcanvas.sass" data-dependence="">
+                    _offcanvas.sass
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="ls-display-block">
                     <input name="files[]" type="checkbox" data-file="_reset.sass" value="https://raw.githubusercontent.com/locaweb/locawebstyle/reboot/source/assets/stylesheets/locastyle/base/_reset.sass" data-dependence="">
                     _reset.sass
                   </label>
@@ -595,6 +630,14 @@
                   <label class="ls-display-block">
                     <input name="files[]" type="checkbox" data-file="_typography.sass" value="https://raw.githubusercontent.com/locaweb/locawebstyle/reboot/source/assets/stylesheets/locastyle/base/_typography.sass" data-dependence="">
                     _typography.sass
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="ls-display-block">
+                    <input name="files[]" type="checkbox" data-file="_variable-colors.scss" value="https://raw.githubusercontent.com/locaweb/locawebstyle/reboot/source/assets/stylesheets/locastyle/base/_variable-colors.scss" data-dependence="">
+                    _variable-colors.scss
                   </label>
                 </td>
               </tr>

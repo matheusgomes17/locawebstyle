@@ -19,6 +19,60 @@
       "path": "changelog/2014/07/23/3-0-1"
   },
   
+  "changelog/2014/07/31/versao-3-1-0" :   {
+      "title": "Versão 3.1.0",
+      "description": "",
+      "path": "changelog/2014/07/31/versao-3-1-0"
+  },
+  
+  "changelog/2014/08/19/versao-3-2-0" :   {
+      "title": "Versão 3.2.0",
+      "description": "",
+      "path": "changelog/2014/08/19/versao-3-2-0"
+  },
+  
+  "changelog/2014/08/20/versao-3-2-1" :   {
+      "title": "Versão 3.2.1",
+      "description": "",
+      "path": "changelog/2014/08/20/versao-3-2-1"
+  },
+  
+  "changelog/2014/08/20/versao-3-2-2" :   {
+      "title": "Versão 3.2.2",
+      "description": "",
+      "path": "changelog/2014/08/20/versao-3-2-2"
+  },
+  
+  "changelog/2014/09/04/versao-3-3-0" :   {
+      "title": "Versão 3.3.0",
+      "description": "",
+      "path": "changelog/2014/09/04/versao-3-3-0"
+  },
+  
+  "changelog/2014/09/08/versao-3-3-1" :   {
+      "title": "Versão 3.3.1",
+      "description": "",
+      "path": "changelog/2014/09/08/versao-3-3-1"
+  },
+  
+  "changelog/2014/09/11/versao-3-3-2" :   {
+      "title": "Versão 3.3.2",
+      "description": "",
+      "path": "changelog/2014/09/11/versao-3-3-2"
+  },
+  
+  "changelog/2014/09/17/versao-3-3-3" :   {
+      "title": "Versão 3.3.3",
+      "description": "",
+      "path": "changelog/2014/09/17/versao-3-3-3"
+  },
+  
+  "changelog/2014/10/16/versao-3-4-0" :   {
+      "title": "Versão 3.4.0",
+      "description": "",
+      "path": "changelog/2014/10/16/versao-3-4-0"
+  },
+  
   "changelog" :   {
       "title": "Changelog",
       "description": "Acompanhe o changelog",
@@ -29,6 +83,12 @@
       "title": "Cartilha de elementos",
       "description": "",
       "path": "documentacao/cartilha-de-elementos"
+  },
+  
+  "documentacao/componentes/alert-box" :   {
+      "title": "Box de notificação",
+      "description": "Boxes de notificações usado para dividir ou agrupar notificações.",
+      "path": "documentacao/componentes/alert-box"
   },
   
   "documentacao/componentes/alertas" :   {
@@ -45,7 +105,7 @@
   
   "documentacao/componentes/botao-switch" :   {
       "title": "Botão Switch",
-      "description": "É um elemento que simula um liga/desliga, que verifica se o checkbox está checado, alternando visualmente o seu estado.",
+      "description": "O botão Switch permite a escolha de apenas uma entre duas opções (Ativado ou Desativado).",
       "path": "documentacao/componentes/botao-switch"
   },
   
@@ -55,10 +115,10 @@
       "path": "documentacao/componentes/botoes"
   },
   
-  "documentacao/componentes/box" :   {
-      "title": "Box genérico",
-      "description": "Um box genérico usado para dividir ou agrupar conteúdos",
-      "path": "documentacao/componentes/box"
+  "documentacao/componentes/box-info" :   {
+      "title": "Box Informativo",
+      "description": "Elemento que pode ser utilizado no dashboard de um painel para exibir informações resumidas, principalmente dados numéricos.",
+      "path": "documentacao/componentes/box-info"
   },
   
   "documentacao/componentes/breadcrumb" :   {
@@ -77,6 +137,18 @@
       "title": "Dropdown",
       "description": "Componente para agrupar listas de links.",
       "path": "documentacao/componentes/dropdown"
+  },
+  
+  "documentacao/componentes/estrutura-principal" :   {
+      "title": "Estrutura principal",
+      "description": "É daqui que você vai começar. Nosso Boilerplate responsivo tem header, menu lateral e uma estrutura de conteúdo principal que é fluida, ou seja, sem largura limitada.",
+      "path": "documentacao/componentes/estrutura-principal"
+  },
+  
+  "documentacao/componentes/generic-box" :   {
+      "title": "Box genérico",
+      "description": "Um box genérico usado para dividir ou agrupar conteúdos",
+      "path": "documentacao/componentes/generic-box"
   },
   
   "documentacao/componentes" :   {
@@ -109,12 +181,6 @@
       "path": "documentacao/componentes/popover"
   },
   
-  "documentacao/componentes/rastreando-eventos" :   {
-      "title": "Rastreando eventos",
-      "description": "Rastreio de eventos automáticos para quem usa o "Analytics" do Google",
-      "path": "documentacao/componentes/rastreando-eventos"
-  },
-  
   "documentacao/componentes/tabelas" :   {
       "title": "Tabelas",
       "description": "Padrão de tabelas",
@@ -137,6 +203,12 @@
       "title": "Tour Guiado",
       "description": "Exibe uma navegação explicativa de elementos pré definidos",
       "path": "documentacao/componentes/tour-guiado"
+  },
+  
+  "documentacao/css/classes-de-breakpoints" :   {
+      "title": "Classes de breakpoints",
+      "description": "Classes que representam o breakpoint atual",
+      "path": "documentacao/css/classes-de-breakpoints"
   },
   
   "documentacao/css/classes-funcionais" :   {
@@ -163,6 +235,12 @@
       "path": "documentacao/css/grid"
   },
   
+  "documentacao/css/icones-panel" :   {
+      "title": "Ícones de painel",
+      "description": "Coleção de font icons ativadas por classe",
+      "path": "documentacao/css/icones-panel"
+  },
+  
   "documentacao/css/icones" :   {
       "title": "Ícones",
       "description": "Coleção de font icons ativadas por classe",
@@ -181,6 +259,12 @@
       "path": "documentacao/exemplos/boilerplate"
   },
   
+  "documentacao/exemplos/create-new-password" :   {
+      "title": "Crie uma nova senha",
+      "description": "",
+      "path": "documentacao/exemplos/create-new-password"
+  },
+  
   "documentacao/exemplos/erro-404" :   {
       "title": "",
       "description": "",
@@ -191,6 +275,12 @@
       "title": "",
       "description": "",
       "path": "documentacao/exemplos/erro-500"
+  },
+  
+  "documentacao/exemplos/forgot-password" :   {
+      "title": "Esqueci a minha senha",
+      "description": "",
+      "path": "documentacao/exemplos/forgot-password"
   },
   
   "documentacao/exemplos" :   {
@@ -266,7 +356,7 @@
   },
   
   "documentacao/exemplos/painel1/home" :   {
-      "title": "Página Inicial",
+      "title": "Dashboard",
       "description": "",
       "path": "documentacao/exemplos/painel1/home"
   },
@@ -331,6 +421,102 @@
       "path": "documentacao/exemplos/painel2/stats"
   },
   
+  "documentacao/exemplos/painel3/contacts" :   {
+      "title": "Contatos",
+      "description": "",
+      "path": "documentacao/exemplos/painel3/contacts"
+  },
+  
+  "documentacao/exemplos/painel3/nameservers/edit" :   {
+      "title": "Servidores de DNS",
+      "description": "",
+      "path": "documentacao/exemplos/painel3/nameservers/edit"
+  },
+  
+  "documentacao/exemplos/painel3/nameservers" :   {
+      "title": "Servidores de DNS",
+      "description": "",
+      "path": "documentacao/exemplos/painel3/nameservers"
+  },
+  
+  "documentacao/exemplos/painel3/pre-painel" :   {
+      "title": "Pré Painel",
+      "description": "",
+      "path": "documentacao/exemplos/painel3/pre-painel"
+  },
+  
+  "documentacao/exemplos/painel4/config-favicon" :   {
+      "title": "Favicon",
+      "description": "",
+      "path": "documentacao/exemplos/painel4/config-favicon"
+  },
+  
+  "documentacao/exemplos/painel4/config-ga" :   {
+      "title": "Google analytics",
+      "description": "",
+      "path": "documentacao/exemplos/painel4/config-ga"
+  },
+  
+  "documentacao/exemplos/painel4/config-language" :   {
+      "title": "Idiomas",
+      "description": "",
+      "path": "documentacao/exemplos/painel4/config-language"
+  },
+  
+  "documentacao/exemplos/painel4/config-mobile" :   {
+      "title": "Site feito com o Criador de Sites Mobile",
+      "description": "",
+      "path": "documentacao/exemplos/painel4/config-mobile"
+  },
+  
+  "documentacao/exemplos/painel4/config-publish" :   {
+      "title": "Publicar o site",
+      "description": "",
+      "path": "documentacao/exemplos/painel4/config-publish"
+  },
+  
+  "documentacao/exemplos/painel4/config-users" :   {
+      "title": "Usuários do Site",
+      "description": "",
+      "path": "documentacao/exemplos/painel4/config-users"
+  },
+  
+  "documentacao/exemplos/painel4/home-first-access" :   {
+      "title": "Página Inicial",
+      "description": "",
+      "path": "documentacao/exemplos/painel4/home-first-access"
+  },
+  
+  "documentacao/exemplos/painel4/home" :   {
+      "title": "Página Inicial",
+      "description": "",
+      "path": "documentacao/exemplos/painel4/home"
+  },
+  
+  "documentacao/exemplos/painel4/plugins" :   {
+      "title": "Plugins",
+      "description": "",
+      "path": "documentacao/exemplos/painel4/plugins"
+  },
+  
+  "documentacao/exemplos/painel4/pre-painel" :   {
+      "title": "Pré Painel - Criador de Sites 2.0",
+      "description": "",
+      "path": "documentacao/exemplos/painel4/pre-painel"
+  },
+  
+  "documentacao/exemplos/painel5/home" :   {
+      "title": "Entradas de DNS",
+      "description": "",
+      "path": "documentacao/exemplos/painel5/home"
+  },
+  
+  "documentacao/exemplos/painel5/pre-painel" :   {
+      "title": "Página Inicial",
+      "description": "",
+      "path": "documentacao/exemplos/painel5/pre-painel"
+  },
+  
   "documentacao/exemplos/product-not-hired" :   {
       "title": "",
       "description": "",
@@ -347,12 +533,6 @@
       "title": "Campos desabilitados",
       "description": "Opções para desabilitar campos ou mostrar em forma de texto",
       "path": "documentacao/formularios/campos-desabilitados"
-  },
-  
-  "documentacao/formularios/campos-personalizados" :   {
-      "title": "Campos personalizados",
-      "description": "Aqueles onde mudamos a aparência ou comportamento padrão do navegador",
-      "path": "documentacao/formularios/campos-personalizados"
   },
   
   "documentacao/formularios/contador" :   {
@@ -391,6 +571,12 @@
       "path": "documentacao/formularios/prefixos-sufixos"
   },
   
+  "documentacao/formularios/select-customizado" :   {
+      "title": "Select customizado",
+      "description": "Mudamos a aparência da select sem alterar o comportamento padrão do navegador",
+      "path": "documentacao/formularios/select-customizado"
+  },
+  
   "documentacao/formularios/tamanho-dos-campos" :   {
       "title": "Tamanho dos campos",
       "description": "Aumente ou diminua o tamanho dos campos de formulários",
@@ -401,6 +587,12 @@
       "title": "Textarea",
       "description": "Particularidades do textarea",
       "path": "documentacao/formularios/textarea"
+  },
+  
+  "documentacao/funcoes-js/alternar-classes" :   {
+      "title": "Alternando Classes",
+      "description": "Como alterar classes de elementos",
+      "path": "documentacao/funcoes-js/alternar-classes"
   },
   
   "documentacao/funcoes-js/alternar-textos" :   {
@@ -422,9 +614,15 @@
   },
   
   "documentacao/funcoes-js" :   {
-      "title": "Alternando Classes",
-      "description": "Como alterar classes de elementos",
+      "title": "Iniciando as funções JS",
+      "description": "Inicie as funções JS do Locaweb Style quando necessário",
       "path": "documentacao/funcoes-js"
+  },
+  
+  "documentacao/funcoes-js/rastreando-eventos" :   {
+      "title": "Rastreando eventos",
+      "description": "Rastreio de eventos automáticos para quem usa o "Analytics" do Google",
+      "path": "documentacao/funcoes-js/rastreando-eventos"
   },
   
   "documentacao/funcoes-js/rolagem-suave" :   {
@@ -461,6 +659,12 @@
       "title": "Informações iniciais",
       "description": "Iniciando seu desenvolvimento com Locaweb Style",
       "path": "documentacao/introducao"
+  },
+  
+  "documentacao/introducao/suporte-browsers" :   {
+      "title": "Suporte para browsers antigos",
+      "description": "Entenda como melhorar o suporte a browsers antigos, como o IE8",
+      "path": "documentacao/introducao/suporte-browsers"
   },
   
   "documentacao/praticas/css" :   {
