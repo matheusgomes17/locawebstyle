@@ -17,7 +17,7 @@
 
   <link href="../../../../assets/stylesheets/locastyle.css" rel="stylesheet" type="text/css" />
 </head>
-<body class="documentacao documentacao_exemplos documentacao_exemplos_painel5 documentacao_exemplos_painel5_home documentacao_exemplos_painel5_home_index">
+<body class="documentacao documentacao_exemplos documentacao_exemplos_painel5 documentacao_exemplos_painel5_dns-entries documentacao_exemplos_painel5_dns-entries_index">
 
   <div class="ls-topbar">
 
@@ -50,12 +50,12 @@
 
   <span class="ls-show-sidebar ls-ico-menu"></span>
 
-  <a href="/locawebstyle/documentacao/exemplos/painel5/pre-painel"  class="ls-go-next"><span class="ls-text">Voltar à lista de serviços</span></a>
+  <a href="/locawebstyle/documentacao/exemplos//pre-painel"  class="ls-go-next"><span class="ls-text">Voltar à lista de serviços</span></a>
 
   <!-- Nome do produto/marca -->
     <h1 class="ls-brand-name">
       <a href="home" class="ls-ico-earth">
-        <small>Zona de DNS</small>
+        <small>Painel de DNS</small>
         fmolina
       </a>
     </h1>
@@ -63,40 +63,21 @@
 
 
   <aside class="ls-sidebar">
-      <div data-ls-module="dropdown" class="ls-dropdown ls-user-account">
-  <a href="#" class="ls-ico-user">
-    <span class="ls-name">João</span>
-    (fmolina)</small>
-  </a>
-  <nav class="ls-dropdown-nav ls-user-menu">
-    <ul>
-      <li><a href="#">Meus dados</a></li>
-      <li><a href="#">Faturas</a></li>
-      <li><a href="#">Planos</a></li>
-     </ul>
-     <a href="#" class="ls-btn-logout">Sair</a>
-  </nav>
-</div>
-	<div class="ls-sidebar-inner">
-	  <a href="/locawebstyle/documentacao/exemplos/painel5/pre-painel"  class="ls-go-prev"><span class="ls-text">Voltar à lista de serviços</span></a>
-	</div>
-
-
+    
   </aside>
 
   <main class="ls-main ">
     <div class="container-fluid">
-      <h1 class="ls-title-intro ls-ico-pencil2">Zona de DNS</h1>
+      <h1 class="ls-title-intro ls-ico-pencil2">Entradas de DNS</h1>
 <div class="ls-box ls-board-box">
   <header class="ls-info-header">
-    <h2 class="ls-title-3">Informações gerais</h2>
+    <h2 class="ls-title-3">adidas.com.br</h2>
   </header>
 
   <div id="sending-stats" class="row ls-clearfix">
     <div class="col-sm-6 col-md-4">
       <div class="ls-box">
         <h6 class="ls-title-4">Domínio</h6>
-        <span class="ls-board-data">
         <span class="ls-board-data">
           <strong>
             REGISTRADO
@@ -131,21 +112,39 @@
 
 <div class="ls-box">
   <header class="ls-info-header">
-    <h2 class="ls-title-3">Adicionando entradas de DNS</h2>
+    <h2 class="ls-title-3">Adicionar novas entradas</h2>
   </header><!-- /header -->
-  form
-</div>
-<div class="ls-box">
-  <header class="ls-info-header">
-    <h2 class="ls-title-3">Entradas de DNS</h2>
-  </header><!-- /header -->
+  <form action="" class="ls-form ls-form-horizontal ls-box ls-box-gray">
+
+    <fieldset class="row">
+      <label class="ls-label col-md-3 col-xs-12">
+        <b class="ls-label-text">Entrada</b>
+        <input type="text" name="entry" class="ls-field" required>
+      </label>
+      <label class="ls-label col-md-2 col-xs-12">
+        <b class="ls-label-text">Tipo</b>
+        <input type="text" name="type" class="ls-field" required>
+      </label>  <label class="ls-label col-md-2 col-xs-12">
+        <b class="ls-label-text">Prioridade</b>
+        <input type="text" name="priority" class="ls-field" required>
+      </label>
+      <label class="ls-label col-md-3 col-xs-12">
+        <b class="ls-label-text">Conteúdo</b>
+        <input type="text" name="content" class="ls-field" required>
+      </label>
+      <div class="col-md-2 col-xs-12 ls-txt-left"><button class="ls-btn ls-btn-primary ls-btn-sm">Adicionar entradas</button></div>
+
+    </fieldset>
+    <p class="ls-help-message">Todas as entradas adicionadas possuirão o mesmo valor de TTL 3600.</p>
+
+  </form>
   <table class="ls-table">
     <thead>
       <tr>
         <th class="ls-data-descending"><a href="#">Entrada</a></th>
         <th class="hidden-xs">Tipo</th>
-        <th class="hidden-xs">Prioridade</th>
-        <th>Conteúdo</th>
+        <th>Prioridade</th>
+        <th class="hidden-xs">Conteúdo</th>
         <th></th>
       </tr>
     </thead>
@@ -153,121 +152,101 @@
         <tr>
           <td>www</td>
           <td class="hidden-xs">CNAME</td>
-          <td class="hidden-xs">0</td>
-          <td>
-            dominio.com.br
-          </td>
-          <td class="ls-txt-right ls-regroup">
-            <a href="#" class="ls-btn-primary ls-btn-sm" data-ls-module="modal" data-action="http://locaweb.com.br/" data-content="" data-title="Editar entrada de DNS" data-class="ls-btn-primary" data-save="Salvar" data-close="Fechar">Editar</a>
-            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger" >Excluir</a>
+          <td>0</td>
+          <td class="hidden-xs">adidas.com.br</td>
+          <td class="ls-txt-right">
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-primary">Editar</a>
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger">Excluir</a>
           </td>
         </tr>
         <tr>
           <td>www</td>
           <td class="hidden-xs">CNAME</td>
-          <td class="hidden-xs">0</td>
-          <td>
-            dominio.com.br
-          </td>
-          <td class="ls-txt-right ls-regroup">
-            <a href="#" class="ls-btn-primary ls-btn-sm" data-ls-module="modal" data-action="http://locaweb.com.br/" data-content="" data-title="Editar entrada de DNS" data-class="ls-btn-primary" data-save="Salvar" data-close="Fechar">Editar</a>
-            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger" >Excluir</a>
+          <td>0</td>
+          <td class="hidden-xs">adidas.com.br</td>
+          <td class="ls-txt-right">
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-primary">Editar</a>
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger">Excluir</a>
           </td>
         </tr>
         <tr>
           <td>www</td>
           <td class="hidden-xs">CNAME</td>
-          <td class="hidden-xs">0</td>
-          <td>
-            dominio.com.br
-          </td>
-          <td class="ls-txt-right ls-regroup">
-            <a href="#" class="ls-btn-primary ls-btn-sm" data-ls-module="modal" data-action="http://locaweb.com.br/" data-content="" data-title="Editar entrada de DNS" data-class="ls-btn-primary" data-save="Salvar" data-close="Fechar">Editar</a>
-            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger" >Excluir</a>
+          <td>0</td>
+          <td class="hidden-xs">adidas.com.br</td>
+          <td class="ls-txt-right">
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-primary">Editar</a>
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger">Excluir</a>
           </td>
         </tr>
         <tr>
           <td>www</td>
           <td class="hidden-xs">CNAME</td>
-          <td class="hidden-xs">0</td>
-          <td>
-            dominio.com.br
-          </td>
-          <td class="ls-txt-right ls-regroup">
-            <a href="#" class="ls-btn-primary ls-btn-sm" data-ls-module="modal" data-action="http://locaweb.com.br/" data-content="" data-title="Editar entrada de DNS" data-class="ls-btn-primary" data-save="Salvar" data-close="Fechar">Editar</a>
-            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger" >Excluir</a>
+          <td>0</td>
+          <td class="hidden-xs">adidas.com.br</td>
+          <td class="ls-txt-right">
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-primary">Editar</a>
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger">Excluir</a>
           </td>
         </tr>
         <tr>
           <td>www</td>
           <td class="hidden-xs">CNAME</td>
-          <td class="hidden-xs">0</td>
-          <td>
-            dominio.com.br
-          </td>
-          <td class="ls-txt-right ls-regroup">
-            <a href="#" class="ls-btn-primary ls-btn-sm" data-ls-module="modal" data-action="http://locaweb.com.br/" data-content="" data-title="Editar entrada de DNS" data-class="ls-btn-primary" data-save="Salvar" data-close="Fechar">Editar</a>
-            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger" >Excluir</a>
+          <td>0</td>
+          <td class="hidden-xs">adidas.com.br</td>
+          <td class="ls-txt-right">
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-primary">Editar</a>
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger">Excluir</a>
           </td>
         </tr>
         <tr>
           <td>www</td>
           <td class="hidden-xs">CNAME</td>
-          <td class="hidden-xs">0</td>
-          <td>
-            dominio.com.br
-          </td>
-          <td class="ls-txt-right ls-regroup">
-            <a href="#" class="ls-btn-primary ls-btn-sm" data-ls-module="modal" data-action="http://locaweb.com.br/" data-content="" data-title="Editar entrada de DNS" data-class="ls-btn-primary" data-save="Salvar" data-close="Fechar">Editar</a>
-            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger" >Excluir</a>
+          <td>0</td>
+          <td class="hidden-xs">adidas.com.br</td>
+          <td class="ls-txt-right">
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-primary">Editar</a>
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger">Excluir</a>
           </td>
         </tr>
         <tr>
           <td>www</td>
           <td class="hidden-xs">CNAME</td>
-          <td class="hidden-xs">0</td>
-          <td>
-            dominio.com.br
-          </td>
-          <td class="ls-txt-right ls-regroup">
-            <a href="#" class="ls-btn-primary ls-btn-sm" data-ls-module="modal" data-action="http://locaweb.com.br/" data-content="" data-title="Editar entrada de DNS" data-class="ls-btn-primary" data-save="Salvar" data-close="Fechar">Editar</a>
-            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger" >Excluir</a>
+          <td>0</td>
+          <td class="hidden-xs">adidas.com.br</td>
+          <td class="ls-txt-right">
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-primary">Editar</a>
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger">Excluir</a>
           </td>
         </tr>
         <tr>
           <td>www</td>
           <td class="hidden-xs">CNAME</td>
-          <td class="hidden-xs">0</td>
-          <td>
-            dominio.com.br
-          </td>
-          <td class="ls-txt-right ls-regroup">
-            <a href="#" class="ls-btn-primary ls-btn-sm" data-ls-module="modal" data-action="http://locaweb.com.br/" data-content="" data-title="Editar entrada de DNS" data-class="ls-btn-primary" data-save="Salvar" data-close="Fechar">Editar</a>
-            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger" >Excluir</a>
+          <td>0</td>
+          <td class="hidden-xs">adidas.com.br</td>
+          <td class="ls-txt-right">
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-primary">Editar</a>
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger">Excluir</a>
           </td>
         </tr>
         <tr>
           <td>www</td>
           <td class="hidden-xs">CNAME</td>
-          <td class="hidden-xs">0</td>
-          <td>
-            dominio.com.br
-          </td>
-          <td class="ls-txt-right ls-regroup">
-            <a href="#" class="ls-btn-primary ls-btn-sm" data-ls-module="modal" data-action="http://locaweb.com.br/" data-content="" data-title="Editar entrada de DNS" data-class="ls-btn-primary" data-save="Salvar" data-close="Fechar">Editar</a>
-            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger" >Excluir</a>
+          <td>0</td>
+          <td class="hidden-xs">adidas.com.br</td>
+          <td class="ls-txt-right">
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-primary">Editar</a>
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger">Excluir</a>
           </td>
         </tr>
         <tr>
           <td>www</td>
           <td class="hidden-xs">CNAME</td>
-          <td class="hidden-xs">0</td>
-          <td>
-            dominio.com.br
-          </td>
-          <td class="ls-txt-right ls-regroup">
-            <a href="#" class="ls-btn-primary ls-btn-sm" data-ls-module="modal" data-action="http://locaweb.com.br/" data-content="" data-title="Editar entrada de DNS" data-class="ls-btn-primary" data-save="Salvar" data-close="Fechar">Editar</a>
-            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger" >Excluir</a>
+          <td>0</td>
+          <td class="hidden-xs">adidas.com.br</td>
+          <td class="ls-txt-right">
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-primary">Editar</a>
+            <a href="#" class="ls-btn ls-btn-sm ls-btn-danger">Excluir</a>
           </td>
         </tr>
     </tbody>
@@ -317,23 +296,23 @@
       <h3 class="ls-title-2">Notificações</h3>
       <ul>
           <li class="ls-dismissable">
-            <a href="#">Sapiente qui voluptates quaerat qui voluptatibus et asperiores</a>
+            <a href="#">Aut ut et est quia reprehenderit corrupti inventore</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
           <li class="ls-dismissable">
-            <a href="#">Animi facilis molestias rerum tempora quis perspiciatis voluptas officiis et ea</a>
+            <a href="#">Qui quos ducimus minima et voluptatum nobis in quasi dicta totam incidunt temporibus eveniet velit</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
           <li class="ls-dismissable">
-            <a href="#">Tempore ut autem dolorem explicabo sed cumque cum aut minima</a>
+            <a href="#">Qui enim officia suscipit qui officia et veritatis expedita sit expedita ullam voluptatem animi mollitia</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
           <li class="ls-dismissable">
-            <a href="#">Ex sapiente sed voluptates rerum expedita officiis possimus</a>
+            <a href="#">Qui itaque aliquam voluptate qui consequatur</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
           <li class="ls-dismissable">
-            <a href="#">Accusamus eius ipsam est dolor recusandae voluptatibus nesciunt</a>
+            <a href="#">Reprehenderit autem placeat molestiae rerum reprehenderit maiores tempora quibusdam</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
       </ul>
@@ -342,8 +321,8 @@
     <nav class="ls-notification-list" id="ls-help-curtain">
       <h3 class="ls-title-2">Feedback</h3>
       <ul>
-          <li><a href="#">> ut ut molestias odit suscipit eligendi</a></li>
-          <li><a href="#">> aspernatur exercitationem quisquam voluptates cumque est</a></li>
+          <li><a href="#">> sed voluptatem dolor dicta est est</a></li>
+          <li><a href="#">> ut et molestias qui eligendi consequatur</a></li>
       </ul>
     </nav>
     <nav class="ls-notification-list" id="ls-feedback-curtain">

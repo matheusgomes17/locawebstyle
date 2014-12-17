@@ -505,6 +505,12 @@
       "path": "documentacao/exemplos/painel4/pre-painel"
   },
   
+  "documentacao/exemplos/painel5/dns-entries" :   {
+      "title": "Entradas de DNS",
+      "description": "",
+      "path": "documentacao/exemplos/painel5/dns-entries"
+  },
+  
   "documentacao/exemplos/painel5/home" :   {
       "title": "Entradas de DNS",
       "description": "",
